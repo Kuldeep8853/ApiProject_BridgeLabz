@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Manager.Migrations
+namespace EmployeeModel.Migrations
 {
     public partial class initial : Migration
     {

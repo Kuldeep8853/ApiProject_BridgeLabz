@@ -1,7 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Threading.Tasks;
 
-namespace Manager
+namespace EmployeeModel
 {
     public class Employee
     {

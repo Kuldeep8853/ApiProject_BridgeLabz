@@ -3,7 +3,6 @@ E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Manager\bin\Debug\netcoreapp
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Manager\bin\Debug\netcoreapp2.1\EmployeeModels.runtimeconfig.dev.json
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Manager\bin\Debug\netcoreapp2.1\EmployeeModels.dll
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Manager\bin\Debug\netcoreapp2.1\EmployeeModels.pdb
-E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Manager\obj\Debug\netcoreapp2.1\EmployeeModels.csprojAssemblyReference.cache
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Manager\obj\Debug\netcoreapp2.1\EmployeeModels.csproj.CoreCompileInputs.cache
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Manager\obj\Debug\netcoreapp2.1\EmployeeModels.AssemblyInfoInputs.cache
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Manager\obj\Debug\netcoreapp2.1\EmployeeModels.AssemblyInfo.cs

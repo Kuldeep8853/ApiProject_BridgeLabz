@@ -909,7 +909,7 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "EmployeeModel/1.0.0": {
+      "EmployeeModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
@@ -917,10 +917,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.2"
         },
         "compile": {
-          "bin/placeholder/EmployeeModel.dll": {}
+          "bin/placeholder/EmployeeModels.dll": {}
         },
         "runtime": {
-          "bin/placeholder/EmployeeModel.dll": {}
+          "bin/placeholder/EmployeeModels.dll": {}
         }
       }
     }
@@ -3499,15 +3499,15 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "EmployeeModel/1.0.0": {
+    "EmployeeModels/1.0.0": {
       "type": "project",
-      "path": "../Manager/EmployeeModel.csproj",
-      "msbuildProject": "../Manager/EmployeeModel.csproj"
+      "path": "../Manager/EmployeeModels.csproj",
+      "msbuildProject": "../Manager/EmployeeModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "EmployeeModel >= 1.0.0",
+      "EmployeeModels >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -3537,8 +3537,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModel.csproj": {
-              "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModel.csproj"
+            "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj": {
+              "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj"
             }
           }
         }

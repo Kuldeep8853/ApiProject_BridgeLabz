@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ertEhfJHoJqsJchSHXj6JXl+UfDnOGXeS32m1P1EuB/n+rROMBuHcoahY9jZy510RXC4KqmtDuDnQ/KXuxPV+A==",
+  "dgSpecHash": "VAO/BauU5wTRgb+niSL6zPVnR591MMMdOpikHwzwOk/wi9fYWpbVsevBQ9RTcX+Iof/pEdJrCG8wGVmtEvgdnw==",
   "success": true,
-  "projectFilePath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModel.csproj",
+  "projectFilePath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp pc\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\microsoft.entityframeworkcore\\2.1.2\\microsoft.entityframeworkcore.2.1.2.nupkg.sha512",

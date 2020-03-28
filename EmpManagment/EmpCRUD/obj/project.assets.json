@@ -2045,7 +2045,7 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "EmployeeModel/1.0.0": {
+      "EmployeeModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
@@ -2053,10 +2053,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.2"
         },
         "compile": {
-          "bin/placeholder/EmployeeModel.dll": {}
+          "bin/placeholder/EmployeeModels.dll": {}
         },
         "runtime": {
-          "bin/placeholder/EmployeeModel.dll": {}
+          "bin/placeholder/EmployeeModels.dll": {}
         }
       },
       "ManagerClass/1.0.0": {
@@ -2076,7 +2076,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "EmployeeModel": "1.0.0"
+          "EmployeeModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
@@ -6292,10 +6292,10 @@
         "version.txt"
       ]
     },
-    "EmployeeModel/1.0.0": {
+    "EmployeeModels/1.0.0": {
       "type": "project",
-      "path": "../Manager/EmployeeModel.csproj",
-      "msbuildProject": "../Manager/EmployeeModel.csproj"
+      "path": "../Manager/EmployeeModels.csproj",
+      "msbuildProject": "../Manager/EmployeeModels.csproj"
     },
     "ManagerClass/1.0.0": {
       "type": "project",
@@ -6310,7 +6310,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "EmployeeModel >= 1.0.0",
+      "EmployeeModels >= 1.0.0",
       "ManagerClass >= 1.0.0",
       "Microsoft.AspNetCore >= 2.1.4",
       "Microsoft.AspNetCore.Http >= 2.2.2",
@@ -6353,8 +6353,8 @@
             "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\ManagerClass.csproj": {
               "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\ManagerClass.csproj"
             },
-            "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModel.csproj": {
-              "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModel.csproj"
+            "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj": {
+              "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj"
             },
             "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Repository\\Repository.csproj": {
               "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Repository\\Repository.csproj"

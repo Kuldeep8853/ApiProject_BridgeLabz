@@ -909,7 +909,7 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "EmployeeModel/1.0.0": {
+      "EmployeeModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
@@ -917,17 +917,17 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.2"
         },
         "compile": {
-          "bin/placeholder/EmployeeModel.dll": {}
+          "bin/placeholder/EmployeeModels.dll": {}
         },
         "runtime": {
-          "bin/placeholder/EmployeeModel.dll": {}
+          "bin/placeholder/EmployeeModels.dll": {}
         }
       },
       "Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "EmployeeModel": "1.0.0"
+          "EmployeeModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
@@ -3512,10 +3512,10 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "EmployeeModel/1.0.0": {
+    "EmployeeModels/1.0.0": {
       "type": "project",
-      "path": "../Manager/EmployeeModel.csproj",
-      "msbuildProject": "../Manager/EmployeeModel.csproj"
+      "path": "../Manager/EmployeeModels.csproj",
+      "msbuildProject": "../Manager/EmployeeModels.csproj"
     },
     "Repository/1.0.0": {
       "type": "project",

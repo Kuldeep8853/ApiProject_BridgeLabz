@@ -63,12 +63,12 @@
         }
       }
     },
-    "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModel.csproj": {
+    "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModel.csproj",
-        "projectName": "EmployeeModel",
-        "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModel.csproj",
+        "projectUniqueName": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj",
+        "projectName": "EmployeeModels",
+        "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj",
         "packagesPath": "C:\\Users\\hp pc\\.nuget\\packages\\",
         "outputPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\obj\\",
         "projectStyle": "PackageReference",
@@ -155,8 +155,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModel.csproj": {
-                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModel.csproj"
+              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj": {
+                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj"
               }
             }
           }

@@ -922,6 +922,20 @@
         "runtime": {
           "bin/placeholder/EmployeeModels.dll": {}
         }
+      },
+      "EmpModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.1.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.2"
+        },
+        "compile": {
+          "bin/placeholder/EmpModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmpModels.dll": {}
+        }
       }
     }
   },
@@ -3503,10 +3517,16 @@
       "type": "project",
       "path": "../Manager/EmployeeModels.csproj",
       "msbuildProject": "../Manager/EmployeeModels.csproj"
+    },
+    "EmpModels/1.0.0": {
+      "type": "project",
+      "path": "../Manager/EmpModels.csproj",
+      "msbuildProject": "../Manager/EmpModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "EmpModels >= 1.0.0",
       "EmployeeModels >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
@@ -3539,6 +3559,9 @@
           "projectReferences": {
             "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj": {
               "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj"
+            },
+            "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmpModels.csproj": {
+              "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmpModels.csproj"
             }
           }
         }

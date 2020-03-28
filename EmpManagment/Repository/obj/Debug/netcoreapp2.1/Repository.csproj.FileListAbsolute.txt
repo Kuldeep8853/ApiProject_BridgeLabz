@@ -5,8 +5,8 @@ E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\obj\Debug\netcore
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\bin\Debug\netcoreapp2.1\Repository.dll
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
-E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\bin\Debug\netcoreapp2.1\EmployeeModel.dll
-E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\bin\Debug\netcoreapp2.1\EmployeeModel.pdb
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\obj\Debug\netcoreapp2.1\Repository.dll
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\bin\Debug\netcoreapp2.1\EmployeeModels.dll
+E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\Repository\bin\Debug\netcoreapp2.1\EmployeeModels.pdb

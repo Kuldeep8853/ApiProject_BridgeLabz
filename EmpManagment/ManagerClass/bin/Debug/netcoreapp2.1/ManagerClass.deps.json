@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "ManagerClass/1.0.0": {
         "dependencies": {
+          "EmployeeModels": "1.0.0",
           "Repository": "1.0.0"
         },
         "runtime": {
@@ -472,18 +473,19 @@
           "System.Runtime": "4.1.0"
         }
       },
-      "EmployeeModel/1.0.0": {
+      "EmployeeModels/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.2"
         },
         "runtime": {
-          "EmployeeModel.dll": {}
+          "EmployeeModels.dll": {}
         }
       },
       "Repository/1.0.0": {
         "dependencies": {
-          "EmployeeModel": "1.0.0"
+          "EmpModels": "1.0.0",
+          "EmployeeModels": "1.0.0"
         },
         "runtime": {
           "Repository.dll": {}
@@ -868,7 +870,7 @@
       "path": "system.threading.tasks/4.0.11",
       "hashPath": "system.threading.tasks.4.0.11.nupkg.sha512"
     },
-    "EmployeeModel/1.0.0": {
+    "EmployeeModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

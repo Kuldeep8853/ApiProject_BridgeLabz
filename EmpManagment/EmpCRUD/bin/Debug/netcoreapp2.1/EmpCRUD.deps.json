@@ -24,7 +24,8 @@
     ".NETCoreApp,Version=v2.1": {
       "EmpCRUD/1.0.0": {
         "dependencies": {
-          "EmployeeModel": "1.0.0",
+          "EmpModels": "1.0.0",
+          "EmployeeModels": "1.0.0",
           "ManagerClass": "1.0.0",
           "Microsoft.AspNetCore": "2.1.4",
           "Microsoft.AspNetCore.Http": "2.2.2",
@@ -1751,20 +1752,21 @@
         }
       },
       "System.Threading.Tasks.Extensions/4.5.1": {},
-      "EmployeeModel/1.0.0": {
+      "EmployeeModels/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.4"
         },
         "runtime": {
-          "EmployeeModel.dll": {}
+          "EmployeeModels.dll": {}
         },
         "compile": {
-          "EmployeeModel.dll": {}
+          "EmployeeModels.dll": {}
         }
       },
       "ManagerClass/1.0.0": {
         "dependencies": {
+          "EmployeeModels": "1.0.0",
           "Repository": "1.0.0"
         },
         "runtime": {
@@ -1776,7 +1778,8 @@
       },
       "Repository/1.0.0": {
         "dependencies": {
-          "EmployeeModel": "1.0.0"
+          "EmpModels": "1.0.0",
+          "EmployeeModels": "1.0.0"
         },
         "runtime": {
           "Repository.dll": {}
@@ -1962,6 +1965,13 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
+        },
+        "compileOnly": true
+      },
+      "EmpModels/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.1.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.4"
         },
         "compileOnly": true
       }
@@ -2911,7 +2921,7 @@
       "path": "system.threading.tasks.extensions/4.5.1",
       "hashPath": "system.threading.tasks.extensions.4.5.1.nupkg.sha512"
     },
-    "EmployeeModel/1.0.0": {
+    "EmployeeModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2974,6 +2984,11 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "EmpModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

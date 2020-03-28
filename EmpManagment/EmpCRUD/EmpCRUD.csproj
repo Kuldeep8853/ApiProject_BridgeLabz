@@ -24,7 +24,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ManagerClass\ManagerClass.csproj" />
-    <ProjectReference Include="..\Manager\EmployeeModel.csproj" />
+    <ProjectReference Include="..\Manager\EmployeeModels.csproj" />
+    <ProjectReference Include="..\Manager\EmpModels.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>
 

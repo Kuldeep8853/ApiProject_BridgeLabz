@@ -5,11 +5,9 @@ E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\EmpCRUD.runtimeconfig.json
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\EmpCRUD.runtimeconfig.dev.json
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\EmpCRUD.dll
-E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\EmployeeModel.dll
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\ManagerClass.dll
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\Repository.dll
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\ManagerClass.pdb
-E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\EmployeeModel.pdb
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\Repository.pdb
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.csprojAssemblyReference.cache
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.AssemblyInfoInputs.cache
@@ -20,3 +18,5 @@ E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.dll
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.pdb
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.csproj.CoreCompileInputs.cache
+E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\EmployeeModels.dll
+E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\EmployeeModels.pdb

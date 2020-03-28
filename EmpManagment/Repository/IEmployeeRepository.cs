@@ -6,11 +6,11 @@ namespace Repository
 {
     public interface IEmployeeRepository
     {
-        // IEnumerable<Employee> GetAll();
-        //Employee Get(long id);
-         Task<int> Add(Employee entity);
-        /* void Update(Employee dbEntity, Employee entity);
-         void Delete(Employee entity);*/
+        IEnumerable<Employee> GetAll();
+        Employee Get(long id);
+        Task<int> Add(Employee entity);
+        void Update(Employee dbEntity, Employee entity);
+        void Delete(Employee entity);
     }
 
 }

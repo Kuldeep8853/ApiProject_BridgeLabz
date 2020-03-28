@@ -15,34 +15,30 @@ namespace ManagerClass
             this.Employee = employee;
         }
 
-       /* public IEnumerable<Employee> GetAll()
+        public IEnumerable<Employee> GetAll()
         {
-            return null;
+            return Employee.GetAll();
         }
 
         public Employee Get(long id)
         {
-            return null;
-        }*/
+            return Employee.Get(id);
+        }
 
         public Task<int> Add(Employee entity)
         {
             return Employee.Add(entity);
         }
 
-       /* public void Update(Employee employee, Employee entity)
+        public void Update(Employee employee, Employee entity)
         {
-           
+            Employee.Update(employee, entity);
         }
 
         public void Delete(Employee employee)
         {
-           
+            Employee.Delete(employee);
         }
 
-        IEnumerable<Employee> IManager.GetAll()
-        {
-            throw new NotImplementedException();
-        }*/
     }
 }

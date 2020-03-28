@@ -1,4 +1,6 @@
 ﻿using EmployeeModel;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Repository
@@ -13,7 +15,7 @@ namespace Repository
 
         }
 
-       /* public IEnumerable<Employee> GetAll()
+        public IEnumerable<Employee> GetAll()
         {
             return _employeeContext.Employees.ToList();
         }
@@ -21,7 +23,7 @@ namespace Repository
         public Employee Get(long id)
         {
             return _employeeContext.Employees.FirstOrDefault(e => e.EmployeeId == id);
-        }*/
+        }
 
         public Task<int> Add(Employee employee)
         {
@@ -30,7 +32,7 @@ namespace Repository
             return result;
         }
 
-       /* public void Update(Employee employee, Employee entity)
+        public void Update(Employee employee, Employee entity)
         {
             employee.FirstName = entity.FirstName;
             employee.LastName = entity.LastName;
@@ -45,6 +47,6 @@ namespace Repository
         {
             _employeeContext.Employees.Remove(employee);
             _employeeContext.SaveChanges();
-        }*/
+        }
     }
 }

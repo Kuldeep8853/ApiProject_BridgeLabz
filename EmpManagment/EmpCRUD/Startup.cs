@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using EmployeeModel;
-using ManagerClass;
+﻿using ManagerClass;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Repository;
-using System.Configuration;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace EmpCRUD
@@ -28,7 +22,7 @@ namespace EmpCRUD
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-           
+
             services.AddDbContext<UserContext>(option => option.UseSqlServer(Configuration.GetConnectionString("UserDbConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddTransient<IEmployeeManager, EmployeeManager>();
@@ -36,7 +30,7 @@ namespace EmpCRUD
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "EmployeeManagment", Version = "v1" });
             });
         }
 

@@ -9,9 +9,9 @@ namespace EmpManagment.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        readonly IManager manager;
+        readonly IEmployeeManager manager;
 
-        public EmployeeController(IManager manager)
+        public EmployeeController(IEmployeeManager manager)
         {
             this.manager = manager;
         }

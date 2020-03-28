@@ -27,14 +27,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\ManagerClass.csproj": {
-                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\ManagerClass.csproj"
+              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\Manager.csproj": {
+                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\Manager.csproj"
               },
-              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj": {
-                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj"
-              },
-              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmpModels.csproj": {
-                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmpModels.csproj"
+              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\Model.csproj": {
+                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\Model.csproj"
               },
               "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Repository\\Repository.csproj": {
                 "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Repository\\Repository.csproj"
@@ -53,33 +50,19 @@
           "dependencies": {
             "Microsoft.AspNetCore": {
               "target": "Package",
-              "version": "[2.1.4, )"
-            },
-            "Microsoft.AspNetCore.Http": {
-              "target": "Package",
-              "version": "[2.2.2, )"
+              "version": "[2.1.0, )"
             },
             "Microsoft.AspNetCore.HttpsPolicy": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[2.1.0, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
-              "version": "[2.1.4, )"
+              "version": "[2.1.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[2.1.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.4, )"
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[2.1.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -87,9 +70,17 @@
               "version": "[2.1.0, )",
               "autoReferenced": true
             },
-            "Swashbuckle.AspNetCore": {
+            "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
-              "version": "[5.2.1, )"
+              "version": "[4.0.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[4.0.1, )"
             }
           },
           "imports": [
@@ -106,12 +97,12 @@
         }
       }
     },
-    "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\ManagerClass.csproj": {
+    "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\Manager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\ManagerClass.csproj",
-        "projectName": "ManagerClass",
-        "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\ManagerClass.csproj",
+        "projectUniqueName": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\Manager.csproj",
+        "projectName": "Manager",
+        "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\Manager.csproj",
         "packagesPath": "C:\\Users\\hp pc\\.nuget\\packages\\",
         "outputPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\ManagerClass\\obj\\",
         "projectStyle": "PackageReference",
@@ -129,8 +120,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj": {
-                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj"
+              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\Model.csproj": {
+                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\Model.csproj"
               },
               "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Repository\\Repository.csproj": {
                 "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Repository\\Repository.csproj"
@@ -168,12 +159,12 @@
         }
       }
     },
-    "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj": {
+    "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj",
-        "projectName": "EmployeeModels",
-        "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj",
+        "projectUniqueName": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\Model.csproj",
         "packagesPath": "C:\\Users\\hp pc\\.nuget\\packages\\",
         "outputPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\obj\\",
         "projectStyle": "PackageReference",
@@ -202,89 +193,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmpModels.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmpModels.csproj",
-        "projectName": "EmpModels",
-        "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmpModels.csproj",
-        "packagesPath": "C:\\Users\\hp pc\\.nuget\\packages\\",
-        "outputPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\hp pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.1": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.1": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -329,11 +237,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj": {
-                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmployeeModels.csproj"
-              },
-              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmpModels.csproj": {
-                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\EmpModels.csproj"
+              "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\Model.csproj": {
+                "projectPath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\Manager\\Model.csproj"
               }
             }
           }
@@ -347,6 +252,18 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",

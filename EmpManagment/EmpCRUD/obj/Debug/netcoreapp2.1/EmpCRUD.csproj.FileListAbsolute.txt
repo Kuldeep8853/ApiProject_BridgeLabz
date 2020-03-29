@@ -13,7 +13,6 @@ E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\Model.pdb
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\bin\Debug\netcoreapp2.1\Repository.pdb
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.csprojAssemblyReference.cache
-E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.csproj.CoreCompileInputs.cache
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.RazorAssemblyInfo.cache
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.RazorAssemblyInfo.cs
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.AssemblyInfoInputs.cache
@@ -23,3 +22,4 @@ E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.dll
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.pdb
 E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.genruntimeconfig.cache
+E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\EmpCRUD\obj\Debug\netcoreapp2.1\EmpCRUD.csproj.CoreCompileInputs.cache

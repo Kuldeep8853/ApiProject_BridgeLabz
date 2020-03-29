@@ -1,17 +1,31 @@
-﻿using EmployeeModel;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=UserContext.cs" Company="Bridgelabz">
+//   Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Kuldeep Kasaudhan"/>
+// ----------------------------------------------------------------------------------------------------------------------
 namespace Repository
 {
-        public class UserContext : DbContext
-        {
-            public UserContext(DbContextOptions<UserContext> options) : base(options)
-            {
+    using EmployeeModel;
+    using Microsoft.EntityFrameworkCore;
 
-            }
-            public DbSet<Employee> Employees { get; set; }
+    /// <summary>
+    /// UserContext Class.
+    /// </summary>
+    public class UserContext : DbContext
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserContext"/> class.
+        /// </summary>
+        /// <param name="options">options.</param>
+        public UserContext(DbContextOptions<UserContext> options)
+            : base(options)
+        {
         }
+
+        /// <summary>
+        /// Gets or sets Employee DBSet.
+        /// </summary>
+        public DbSet<Employee> Employees { get; set; }
+    }
 }

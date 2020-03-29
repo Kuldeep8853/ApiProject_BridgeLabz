@@ -64,23 +64,15 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
-            },
-            "Serilog.AspNetCore": {
-              "target": "Package",
-              "version": "[2.1.0, )"
-            },
-            "Serilog.Settings.Configuration": {
-              "target": "Package",
-              "version": "[2.1.0, )"
-            },
-            "Serilog.Sinks.RollingFile": {
-              "target": "Package",
-              "version": "[2.1.0, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",

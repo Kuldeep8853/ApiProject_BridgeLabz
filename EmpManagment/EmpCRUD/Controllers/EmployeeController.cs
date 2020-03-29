@@ -7,11 +7,12 @@
 
 namespace EmpManagment.Controllers
 {
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
     using EmployeeModel;
     using ManagerClass;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// EmployeeController class.
@@ -24,14 +25,16 @@ namespace EmpManagment.Controllers
         /// Declare instance valiable IEmployeeManager type.
         /// </summary>
         private readonly IEmployeeManager manager;
+        private readonly ILogger logger;
 
         /// <summary>
         /// Initializes a new instance of the <see cref = "EmployeeController"/> class.
         /// </summary>
         /// <param name="manager">manager.</param>
-        public EmployeeController(IEmployeeManager manager)
+        public EmployeeController(IEmployeeManager manager, ILoggerFactory loggerFactory)
         {
             this.manager = manager;
+            this.logger = loggerFactory.CreateLogger<EmployeeController>();
         }
 
         /// <summary>
@@ -42,6 +45,7 @@ namespace EmpManagment.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            logger.LogInformation("Get All Employee details...");
             IEnumerable<Employee> employees = this.manager.GetAll();
             return this.Ok(employees);
         }
@@ -55,6 +59,7 @@ namespace EmpManagment.Controllers
         [HttpGet]
         public async Task<IActionResult> Get(long id)
         {
+            logger.LogInformation("Get Employee with respect to id.....");
             Employee employee = this.manager.Get(id);
 
             if (employee == null)
@@ -74,6 +79,7 @@ namespace EmpManagment.Controllers
         [HttpPost]
         public async Task<IActionResult> AddEmployee(Employee employee)
         {
+            logger.LogInformation("Add new Employee details....");
             var result = await this.manager.Add(employee);
             if (result == 1)
             {
@@ -95,6 +101,7 @@ namespace EmpManagment.Controllers
         [HttpPut]
         public IActionResult Put(long id, [FromBody] Employee employee)
         {
+            logger.LogInformation("Update Employee details.....");
             if (employee == null)
             {
                 return this.BadRequest("Employee is null.");
@@ -119,6 +126,7 @@ namespace EmpManagment.Controllers
         [HttpDelete]
         public IActionResult Delete(long id)
         {
+            logger.LogInformation("Delete the Employee Details.....");
             Employee employee = this.manager.Get(id);
             if (employee == null)
             {

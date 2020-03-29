@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wecKGCekSWTyBJhtAqI+GzG7IPJUGVSeP6sOaEEoDxwenF89iBRqxqgQGPLOMW43ysp09VAALNIIzBv6fcs23A==",
+  "dgSpecHash": "z8biHduyA8tk1N+sLflnmBhDBhtC5yp0NZOfzhL1CSTz2gxxWdUU8sZooxbtbfvjL0+1bT/Ikg9UumQykIAcBw==",
   "success": true,
   "projectFilePath": "E:\\WebAPIProject\\ApiProject_BridgeLabz\\EmpManagment\\EmpCRUD\\EmpCRUD.csproj",
   "expectedPackageFiles": [
@@ -132,12 +132,6 @@
     "C:\\Users\\hp pc\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\hp pc\\.nuget\\packages\\serilog\\2.5.0\\serilog.2.5.0.nupkg.sha512",
-    "C:\\Users\\hp pc\\.nuget\\packages\\serilog.aspnetcore\\2.1.0\\serilog.aspnetcore.2.1.0.nupkg.sha512",
-    "C:\\Users\\hp pc\\.nuget\\packages\\serilog.extensions.logging\\2.0.0\\serilog.extensions.logging.2.0.0.nupkg.sha512",
-    "C:\\Users\\hp pc\\.nuget\\packages\\serilog.settings.configuration\\2.1.0\\serilog.settings.configuration.2.1.0.nupkg.sha512",
-    "C:\\Users\\hp pc\\.nuget\\packages\\serilog.sinks.file\\2.0.0\\serilog.sinks.file.2.0.0.nupkg.sha512",
-    "C:\\Users\\hp pc\\.nuget\\packages\\serilog.sinks.rollingfile\\2.1.0\\serilog.sinks.rollingfile.2.1.0.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\4.0.1\\swashbuckle.aspnetcore.swagger.4.0.1.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\4.0.1\\swashbuckle.aspnetcore.swaggergen.4.0.1.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\4.0.1\\swashbuckle.aspnetcore.swaggerui.4.0.1.nupkg.sha512",
@@ -146,7 +140,6 @@
     "C:\\Users\\hp pc\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
-    "C:\\Users\\hp pc\\.nuget\\packages\\system.collections.nongeneric\\4.0.1\\system.collections.nongeneric.4.0.1.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Users\\hp pc\\.nuget\\packages\\system.data.sqlclient\\4.5.0\\system.data.sqlclient.4.5.0.nupkg.sha512",

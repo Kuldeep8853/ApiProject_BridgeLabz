@@ -14,6 +14,7 @@ namespace EmpCRUD
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Logging;
     using Repository;
     using Swashbuckle.AspNetCore.Swagger;
 
@@ -47,6 +48,10 @@ namespace EmpCRUD
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddTransient<IEmployeeManager, EmployeeManager>();
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+
+            ILoggerFactory loggerFactory = new LoggerFactory();
+            loggerFactory.AddDebug();
+            services.AddSingleton<ILoggerFactory>(loggerFactory);
 
             services.AddSwaggerGen(c =>
             {

@@ -25,6 +25,10 @@ namespace EmpManagment.Controllers
         /// Declare instance valiable IEmployeeManager type.
         /// </summary>
         private readonly IEmployeeManager manager;
+
+        /// <summary>
+        /// Declare instance valiable ILogger type.
+        /// </summary>
         private readonly ILogger logger;
 
         /// <summary>

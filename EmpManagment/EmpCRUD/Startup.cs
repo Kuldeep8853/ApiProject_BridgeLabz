@@ -29,6 +29,7 @@ namespace EmpCRUD
         public Startup(IConfiguration configuration)
         {
             this.Configuration = configuration;
+
         }
 
         /// <summary>

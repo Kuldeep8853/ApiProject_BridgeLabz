@@ -23,7 +23,7 @@ namespace ManagerClass
         IEnumerable<Employee> GetAll();
 
         /// <summary>
-        /// Get Employee by EmployeeiD.
+        /// Get Employee by Employee ID.
         /// </summary>
         /// <param name="id">id.</param>
         /// <returns>Employee.</returns>
@@ -33,7 +33,7 @@ namespace ManagerClass
         /// Declare Post method in Api/Employee.
         /// </summary>
         /// <param name="employee">employee.</param>
-        /// <returns>Task.<int>.</returns>
+        /// <returns>Task</returns>
         Task<int> Add(Employee employee);
 
         /// <summary>

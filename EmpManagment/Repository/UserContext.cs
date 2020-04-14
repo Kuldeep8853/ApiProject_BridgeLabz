@@ -4,11 +4,11 @@
 // </copyright>
 // <creator name="Kuldeep Kasaudhan"/>
 // ----------------------------------------------------------------------------------------------------------------------
+using Microsoft.EntityFrameworkCore;
+using Model;
+
 namespace Repository
 {
-    using EmployeeModel;
-    using Microsoft.EntityFrameworkCore;
-
     /// <summary>
     /// UserContext Class.
     /// </summary>

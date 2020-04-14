@@ -7,9 +7,9 @@
 
 namespace Repository
 {
+    using Model;
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using EmployeeModel;
 
     /// <summary>
     /// Declare Interface in Repository Project.

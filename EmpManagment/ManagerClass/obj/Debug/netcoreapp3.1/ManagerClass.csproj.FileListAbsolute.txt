@@ -1,4 +1,0 @@
-E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\ManagerClass\obj\Debug\netcoreapp3.1\ManagerClass.csprojAssemblyReference.cache
-E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\ManagerClass\obj\Debug\netcoreapp3.1\ManagerClass.csproj.CoreCompileInputs.cache
-E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\ManagerClass\obj\Debug\netcoreapp3.1\ManagerClass.AssemblyInfoInputs.cache
-E:\WebAPIProject\ApiProject_BridgeLabz\EmpManagment\ManagerClass\obj\Debug\netcoreapp3.1\ManagerClass.AssemblyInfo.cs

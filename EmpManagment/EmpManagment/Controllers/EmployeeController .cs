@@ -8,7 +8,6 @@
 namespace EmpManagment.Controllers
 {
     using Manager;
-    using Microsoft.AspNetCore.Cors;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
     using Model;
@@ -21,7 +20,6 @@ namespace EmpManagment.Controllers
     /// </summary>
     [Route("api/controller")]
     [ApiController]
-    [EnableCors("AllowOrigin")]
     public class EmployeeController : ControllerBase
     {
         /// <summary>

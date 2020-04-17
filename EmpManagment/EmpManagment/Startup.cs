@@ -37,6 +37,18 @@ namespace EmpManagment
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder =>
+                    {
+                        builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials();
+                    });
+            });
             services.AddDbContext<UserContext>(option => option.UseSqlServer(this.Configuration.GetConnectionString("UserDbConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddTransient<IEmployeeManager, EmployeeManager>();
@@ -49,15 +61,6 @@ namespace EmpManagment
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "EmployeeManagment", Version = "v1" });
-            });
-
-            //services.AddCors(c =>
-            //{
-            //    c.AddPolicy("AllowOrigin", options => options.WithOrigins("https://localhost:44344"));
-            //});
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
             });
         }
 
@@ -77,8 +80,7 @@ namespace EmpManagment
             {
                 app.UseHsts();
             }
-            //app.UseCors(options => options.WithOrigins("https://localhost:44344"));
-            app.UseCors(options => options.AllowAnyOrigin());
+            app.UseCors("AllowAll");
             app.UseHttpsRedirection();
             app.UseMvc();
         }

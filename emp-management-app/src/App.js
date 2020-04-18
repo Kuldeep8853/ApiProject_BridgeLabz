@@ -11,7 +11,7 @@ import Home from './pages/Home';
 function App() {
   return (
     <BrowserRouter>
-      <div className="container">
+      <div>
         <h1 className="App">Employee Management Portal</h1>
         <Navigation/>
         <Switch>

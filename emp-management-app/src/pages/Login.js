@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
-import userLogin from '../services/Controller'
+import { userLogin } from '../services/Controller';
 
 export class Login extends Component {
     constructor(props) {

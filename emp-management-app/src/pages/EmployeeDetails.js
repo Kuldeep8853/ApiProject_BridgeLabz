@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import deteleEmployee from '../services/Controller'
+import { deleteEmployee } from '../services/Controller'
 import UpdateEmployee from './UpdateEmplyee';
 
 export class EmployeeDetails extends Component {
@@ -18,18 +18,13 @@ export class EmployeeDetails extends Component {
                 this.setState({ Employee: results.data });
                 console.log(results.data);
             })
-            .catch(function (error) {
-                document.log(error);
-            })
     }
 
     deleteEmployeedata = (id) => {
         if (window.confirm('Are you sure? '))
-            deteleEmployee(id)
+            deleteEmployee(id)
                 .then(alert('success'))
-
     }
-
 
     render() {
         return (
@@ -58,7 +53,7 @@ export class EmployeeDetails extends Component {
                                         <td>{emp.phoneNumber}</td>
                                         <td>{emp.email}</td>
                                         <td>{emp.password}</td>
-                                        <td><Link to="./UpdateEmployee"><button onClick={()=> UpdateEmployee(emp.employeeId)} variant="success">edit</button></Link>
+                                        <td> {/*  <button Component={UpdateEmployee(emp.employeeId)} variant="success">edit</button> */}
                                             <button onClick={() => this.deleteEmployeedata(emp.employeeId)} variant="danger">delete</button></td>
                                     </tr>
                                 )

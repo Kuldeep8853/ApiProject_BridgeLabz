@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
-import updateEmployee from '../services/Controller'
+import { updateEmployee } from '../services/Controller'
 
 export class UpdateEmployee extends Component {
 
@@ -54,23 +54,23 @@ export class UpdateEmployee extends Component {
         console.log("PassWord", this.state.PassWord);
     }
 
-    handleUpadate=(id)=> {
-            var data = JSON.stringify
-                ({
-                    FirstName: this.state.FirstName,
-                    LastName: this.state.LastName,
-                    PhoneNumber: this.state.PhoneNumber,
-                    Email: this.state.Email,
-                    PassWord: this.state.PassWord
+    handleUpadate = (id) => {
+        var data =
+        {
+            FirstName: this.state.FirstName,
+            LastName: this.state.LastName,
+            PhoneNumber: this.state.PhoneNumber,
+            Email: this.state.Email,
+            PassWord: this.state.PassWord
+        }
+        updateEmployee(id, data)
+            .then(response => response.json())
+            .then((result) => {
+                alert(result);
+            },
+                (error) => {
+                    alert('Failed');
                 })
-                updateEmployee(id, data)
-                .then(response => response.json())
-                .then((result) => {  
-                    alert(result);
-                },
-                    (error) => {
-                        alert('Failed');
-                    })
     }
 
     render() {
@@ -98,7 +98,7 @@ export class UpdateEmployee extends Component {
                     </div>
                 </div>
             </div>
-        ); 
+        );
     }
 }
 export default UpdateEmployee;

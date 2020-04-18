@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
-import userRegistration from '../services/Controller'
+import { addEmployee } from '../services/Controller'
 
 export class Registration extends Component {
 
@@ -54,55 +54,27 @@ export class Registration extends Component {
         console.log("PassWord", this.state.PassWord);
     }
 
-    // handleregister = (event) => {
-    //     event.preventDefault();
-    //     fetch('https://localhost:44344/api/controller/AddEmployee',
-    //         {
-    //             method: 'Post',
-    //             headers: {
-    //                 'Accept': 'application/json',
-    //                 'Content-Type': 'application/json'
-    //             },
-    //             body: JSON.stringify({
-    //                 FirstName: this.state.FirstName,
-    //                 LastName: this.state.LastName,
-    //                 PhoneNumber: this.state.PhoneNumber,
-    //                 Email: this.state.Email,
-    //                 PassWord: this.state.PassWord
-    //             })
-    //         })
-    //         .then(res => res.json())
-    //         .then((result) => {
-    //             alert(result);
-    //         },
-    //             (error) => {
-    //                 alert('Failed');
-    //             }
-    //         )
-    // }
-
     handleRegister = () => {
         this.setState({
             spinner: true
         })
-        var data = JSON.stringify
-            ({
-                FirstName: this.state.FirstName,
-                LastName: this.state.LastName,
-                PhoneNumber: this.state.PhoneNumber,
-                Email: this.state.Email,
-                PassWord: this.state.PassWord
-            })
+        var data =
+        {
+            FirstName: this.state.FirstName,
+            LastName: this.state.LastName,
+            PhoneNumber: this.state.PhoneNumber,
+            Email: this.state.Email,
+            PassWord: this.state.PassWord
+        }
         console.log("data", data);
-        userRegistration(data)
-            .then((response) => {
-                this.setState({
-                    addItemOpen: true,
-                    spinner: false
-                })
-                console.log("Add new Product response====>", response);
-                window.location.reload();
+        addEmployee(data).then((response) => {
+            this.setState({
+                addItemOpen: true,
+                spinner: false
             })
+            console.log("Add new Employee response====>", response);
+            window.location.reload();
+        })
             .catch((err) => {
                 console.log("error occured while adding----------", err);
             });

@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+import {  Nav } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar'
 
 export class Navigation extends Component {
     render() {
         return (
-            <Navbar bg="dark" expand="sm">
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <>
+            <Navbar bg="dark" variant="dark">
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav>
+                    <Navbar.Toggle/>
+                    <Nav className="mr-auto">
                         <NavLink className="d-inline p-2 bg-dark text-white"
                          to="/">Home</NavLink>
                         <NavLink className="d-inline p-2 bg-dark text-white"
@@ -20,6 +22,7 @@ export class Navigation extends Component {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
+            </>
         )
     };
 }

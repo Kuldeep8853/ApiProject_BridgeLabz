@@ -4,8 +4,8 @@ import { updateEmployee } from '../services/Controller'
 
 export class UpdateEmployee extends Component {
 
-    constructor(id) {
-        super(id);
+    constructor(prop) {
+        super(prop);
         this.state = {
             FirstName: '',
             LastName: '',
@@ -94,7 +94,7 @@ export class UpdateEmployee extends Component {
                         <input type="password" className="input-password-text" placeholder="Enter password" onChange={this.handlepasswordChange} />
                     </div>
                     <div className="app-button">
-                        <Button onClick={this.handleUpadate(this.state.id)} color="success" block>Update</Button>
+                        <Button onClick={this.handleUpadate} color="success" block>Update</Button>
                     </div>
                 </div>
             </div>

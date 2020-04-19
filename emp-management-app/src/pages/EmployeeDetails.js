@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import { deleteEmployee } from '../services/Controller'
-import UpdateEmployee from './UpdateEmplyee';
 
 export class EmployeeDetails extends Component {
     constructor(props) {
@@ -24,6 +22,12 @@ export class EmployeeDetails extends Component {
         if (window.confirm('Are you sure? '))
             deleteEmployee(id)
                 .then(alert('success'))
+                window.location.reload();
+    }
+
+    updataEmployee=(id)=>{
+
+  alert('success')
     }
 
     render() {
@@ -53,7 +57,7 @@ export class EmployeeDetails extends Component {
                                         <td>{emp.phoneNumber}</td>
                                         <td>{emp.email}</td>
                                         <td>{emp.password}</td>
-                                        <td> {/*  <button Component={UpdateEmployee(emp.employeeId)} variant="success">edit</button> */}
+                                        <td> <button onClick={() => this.updataEmployee(emp.employeeId)} variant="success">update</button>
                                             <button onClick={() => this.deleteEmployeedata(emp.employeeId)} variant="danger">delete</button></td>
                                     </tr>
                                 )

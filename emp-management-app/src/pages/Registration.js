@@ -73,10 +73,12 @@ export class Registration extends Component {
                 spinner: false
             })
             console.log("Add new Employee response====>", response);
+            alert('You have successfully registered');
             window.location.reload();
         })
             .catch((err) => {
                 console.log("error occured while adding----------", err);
+                alert('Your Registration Failed');
             });
     }
 

@@ -26,11 +26,15 @@ export class Login extends Component {
     }
 
     handleLogin = () => {
-        userLogin(this.state.EmployeeId, this.state.PassWord).then(res => {
-            console.log(res.data);
-        }).catch(err => {
-            console.log(err);
-        });
+        userLogin(this.state.EmployeeId, this.state.PassWord)
+            .then(response => {
+                console.log("Add new Employee response====>", response.data);
+                alert('You have successfully login');
+
+            }).catch((err) => {
+                console.log("error occured while login----------", err);
+                alert('login Failed');
+            });
     }
 
     render() {

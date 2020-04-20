@@ -1,0 +1,12 @@
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\bin\Debug\netcoreapp2.1\Convertor.deps.json
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\bin\Debug\netcoreapp2.1\Convertor.dll
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\bin\Debug\netcoreapp2.1\Convertor.pdb
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\bin\Debug\netcoreapp2.1\Repository.dll
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\bin\Debug\netcoreapp2.1\Repository.pdb
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\obj\Debug\netcoreapp2.1\Convertor.csprojAssemblyReference.cache
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\obj\Debug\netcoreapp2.1\Convertor.csproj.CoreCompileInputs.cache
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\obj\Debug\netcoreapp2.1\Convertor.AssemblyInfoInputs.cache
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\obj\Debug\netcoreapp2.1\Convertor.AssemblyInfo.cs
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\obj\Debug\netcoreapp2.1\Convertor.csproj.CopyComplete
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\obj\Debug\netcoreapp2.1\Convertor.dll
+B:\BridgeLbz_Projects\QuantityMeasurement\Convertor\obj\Debug\netcoreapp2.1\Convertor.pdb

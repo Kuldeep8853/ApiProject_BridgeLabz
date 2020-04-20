@@ -1,8 +1,0 @@
-B:\ApiProject_BridgeLabz\EmpManagment\Model\bin\Debug\netcoreapp2.1\Model.deps.json
-B:\ApiProject_BridgeLabz\EmpManagment\Model\bin\Debug\netcoreapp2.1\Model.dll
-B:\ApiProject_BridgeLabz\EmpManagment\Model\bin\Debug\netcoreapp2.1\Model.pdb
-B:\ApiProject_BridgeLabz\EmpManagment\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
-B:\ApiProject_BridgeLabz\EmpManagment\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
-B:\ApiProject_BridgeLabz\EmpManagment\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
-B:\ApiProject_BridgeLabz\EmpManagment\Model\obj\Debug\netcoreapp2.1\Model.dll
-B:\ApiProject_BridgeLabz\EmpManagment\Model\obj\Debug\netcoreapp2.1\Model.pdb

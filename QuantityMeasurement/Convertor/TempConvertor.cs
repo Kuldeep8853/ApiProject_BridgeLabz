@@ -1,4 +1,5 @@
-﻿using Repository;
+﻿using Model.TempratureModel;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,6 +14,7 @@ namespace Convertor
         {
             this.tempRepository = tempRepository;
         }
+
         public double CelciusToFahrenheit(double celcius)
         {
             return tempRepository.CelciusToFahrenheit(celcius);

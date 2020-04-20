@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
       }
     }
   },
@@ -681,11 +691,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -717,7 +733,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj": {
+              "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

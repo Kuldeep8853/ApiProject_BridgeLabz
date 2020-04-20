@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model.TempratureModel;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,9 +12,9 @@ namespace Repository
             return celcius * 9 / 5 + 32;
         }
 
-        public double FahrenheitToCelcius(double fahrenhite)
+        public double FahrenheitToCelcius(double fahrenhit)
         {
-            return ((fahrenhite - 32) * 5 / 9);
+            return fahrenhit- 32 * 5 / 9;
         }
     }
 }

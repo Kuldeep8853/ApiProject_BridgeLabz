@@ -21,16 +21,24 @@ namespace QuantityMeasurement.Controllers
 
         [Route("api/KgToGm")]
         [HttpGet]
-        public ActionResult<double> GetFeet(double kg)
+        public async Task<IActionResult> GetFeet(double kg)
         {
-            return weightConvertor.KgToGm(kg);
+            var result= weightConvertor.KgToGm(kg);
+            if(result!=0.0)
+                return Ok(result);
+
+            return this.BadRequest();
         }
 
         [Route("api/GmToKg")]
         [HttpGet]
-        public ActionResult<double> GetInch(double gm)
+        public async Task<IActionResult> GetInch(double gm)
         {
-            return weightConvertor.GmToKg(gm);
+            var result= weightConvertor.GmToKg(gm);
+            if (result != 0.0)
+                return Ok(result);
+
+            return this.BadRequest();
         }
     }
 }

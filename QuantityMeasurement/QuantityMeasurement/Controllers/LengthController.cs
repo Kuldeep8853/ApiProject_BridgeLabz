@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Convertor;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Model.LengthModel;
 
 namespace QuantityMeasurement.Controllers
 {
@@ -21,16 +22,24 @@ namespace QuantityMeasurement.Controllers
 
         [Route("api/InchToFeet")]
         [HttpGet]
-        public ActionResult<double> GetFeet(double inch)
+        public async Task<IActionResult> GetFeet(double inch)
         {
-            return lengthConvertor.IncheToFeet(inch);
+            var result= lengthConvertor.IncheToFeet(inch);
+            if (result != 0.0)
+                return Ok(result);
+
+            return this.BadRequest();
         }
 
         [Route("api/FeetToInch")]
         [HttpGet]
-        public ActionResult<double> GetInch(double feet)
+        public async Task<IActionResult> GetInch(double feet)
         {
-            return lengthConvertor.FeetToInche(feet);
+            var result= lengthConvertor.FeetToInche(feet);
+            if (result != 0.0)
+                return Ok(result);
+
+            return this.BadRequest();
         }
     }
 }

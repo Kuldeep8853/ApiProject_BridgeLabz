@@ -1,4 +1,5 @@
-﻿using Repository;
+﻿using Model.WeightModel;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,6 +14,7 @@ namespace Convertor
         {
             this.weightRepository = weightRepository;
         }
+
         public double GmToKg(double gm)
         {
             return weightRepository.GmToKg(gm);

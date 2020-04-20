@@ -1,0 +1,9 @@
+B:\BridgeLbz_Projects\QuantityMeasurement\Model\bin\Debug\netcoreapp2.1\Model.deps.json
+B:\BridgeLbz_Projects\QuantityMeasurement\Model\bin\Debug\netcoreapp2.1\Model.dll
+B:\BridgeLbz_Projects\QuantityMeasurement\Model\bin\Debug\netcoreapp2.1\Model.pdb
+B:\BridgeLbz_Projects\QuantityMeasurement\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
+B:\BridgeLbz_Projects\QuantityMeasurement\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
+B:\BridgeLbz_Projects\QuantityMeasurement\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
+B:\BridgeLbz_Projects\QuantityMeasurement\Model\obj\Debug\netcoreapp2.1\Model.dll
+B:\BridgeLbz_Projects\QuantityMeasurement\Model\obj\Debug\netcoreapp2.1\Model.pdb
+B:\BridgeLbz_Projects\QuantityMeasurement\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache

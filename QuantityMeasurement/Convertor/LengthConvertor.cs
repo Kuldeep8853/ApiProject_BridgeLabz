@@ -1,4 +1,5 @@
-﻿using Repository;
+﻿using Model.LengthModel;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,6 +14,7 @@ namespace Convertor
         {
             this.lengthRepository = lengthRepository;
         }
+
         public double FeetToInche(double feet)
         {
             return lengthRepository.FeetToInche(feet);

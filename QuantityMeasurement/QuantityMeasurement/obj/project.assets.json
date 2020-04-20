@@ -4663,6 +4663,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Model": "1.0.0",
           "Repository": "1.0.0"
         },
         "compile": {
@@ -4672,9 +4673,22 @@
           "bin/placeholder/Convertor.dll": {}
         }
       },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      },
       "Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Repository.dll": {}
         },
@@ -12721,6 +12735,11 @@
       "type": "project",
       "path": "../Convertor/Convertor.csproj",
       "msbuildProject": "../Convertor/Convertor.csproj"
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
     },
     "Repository/1.0.0": {
       "type": "project",

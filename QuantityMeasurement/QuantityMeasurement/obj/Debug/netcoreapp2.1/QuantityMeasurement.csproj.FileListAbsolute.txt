@@ -1,3 +1,9 @@
+B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.csprojAssemblyReference.cache
+B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.csproj.CoreCompileInputs.cache
+B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.RazorAssemblyInfo.cache
+B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.RazorAssemblyInfo.cs
+B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.AssemblyInfoInputs.cache
+B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.AssemblyInfo.cs
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\appsettings.Development.json
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\appsettings.json
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
@@ -7,15 +13,11 @@ B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcorea
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\QuantityMeasurement.dll
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\QuantityMeasurement.pdb
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\Convertor.dll
+B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\Model.dll
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\Repository.dll
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\Convertor.pdb
+B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\Model.pdb
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\bin\Debug\netcoreapp2.1\Repository.pdb
-B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.csprojAssemblyReference.cache
-B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.csproj.CoreCompileInputs.cache
-B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.RazorAssemblyInfo.cache
-B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.RazorAssemblyInfo.cs
-B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.AssemblyInfoInputs.cache
-B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.AssemblyInfo.cs
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.RazorTargetAssemblyInfo.cache
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.csproj.CopyComplete
 B:\BridgeLbz_Projects\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.dll

@@ -208,9 +208,22 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      },
       "Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Repository.dll": {}
         },
@@ -692,6 +705,11 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    },
     "Repository/1.0.0": {
       "type": "project",
       "path": "../Repository/Repository.csproj",
@@ -701,6 +719,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
+      "Model >= 1.0.0",
       "Repository >= 1.0.0"
     ]
   },
@@ -734,6 +753,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj": {
+              "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj"
+            },
             "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Repository\\Repository.csproj": {
               "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Repository\\Repository.csproj"
             }

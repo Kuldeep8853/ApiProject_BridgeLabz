@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model.TempratureModel;
+using System;
 using System.Collections.Generic;
 using System.Text;
 

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Convertor;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Model.TempratureModel;
 
 namespace QuantityMeasurement.Controllers
 {
@@ -21,16 +22,24 @@ namespace QuantityMeasurement.Controllers
 
         [Route("api/CelciusToFahrenheit")]
         [HttpGet]
-        public ActionResult<double> GetFahrenheit(double celcious)
+        public async Task<IActionResult> GetFahrenheit(double celcious)
         {
-            return tempConvertor.CelciusToFahrenheit(celcious);
+            var result= tempConvertor.CelciusToFahrenheit(celcious);
+            if (result != 0.0)
+                return Ok(result);
+
+            return this.BadRequest();
         }
 
         [Route("api/FahrenheitToCelcius")]
         [HttpGet]
-        public ActionResult<double> GetCelcius(double fahrenheit)
+        public async Task<IActionResult> GetCelcius(double fahrenheit)
         {
-            return tempConvertor.FahrenheitToCelcius(fahrenheit);
+            var result= tempConvertor.FahrenheitToCelcius(fahrenheit);
+            if (result != 0.0)
+                return Ok(result);
+
+            return this.BadRequest();
         }
     }
 }

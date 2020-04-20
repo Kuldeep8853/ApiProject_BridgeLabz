@@ -6,3 +6,4 @@ B:\ApiProject_BridgeLabz\EmpManagment\Model\obj\Debug\netcoreapp2.1\Model.Assemb
 B:\ApiProject_BridgeLabz\EmpManagment\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
 B:\ApiProject_BridgeLabz\EmpManagment\Model\obj\Debug\netcoreapp2.1\Model.dll
 B:\ApiProject_BridgeLabz\EmpManagment\Model\obj\Debug\netcoreapp2.1\Model.pdb
+B:\ApiProject_BridgeLabz\EmpManagment\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache

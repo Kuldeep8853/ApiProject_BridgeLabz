@@ -47,3 +47,4 @@ B:\ApiProject_BridgeLabz\QuantityMeasurement\QuantityMeasurement\obj\Debug\netco
 B:\ApiProject_BridgeLabz\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.dll
 B:\ApiProject_BridgeLabz\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.pdb
 B:\ApiProject_BridgeLabz\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.genruntimeconfig.cache
+B:\ApiProject_BridgeLabz\QuantityMeasurement\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.csproj.CoreCompileInputs.cache

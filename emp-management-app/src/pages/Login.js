@@ -49,7 +49,7 @@ export class Login extends Component {
                         <input type="password" className="input-lname-text" placeholder="Entee password" onChange={this.handlepasswordChang} />
                     </div>
                     <div className="app-button">
-                        <Button onClick={this.handleLogin} color="success" block>Login</Button>
+                        <Button onClick={this.handleLogin} className="Submit" block>Login</Button>
                     </div>
                 </div>
             </div>

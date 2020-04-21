@@ -25,11 +25,6 @@ export class EmployeeDetails extends Component {
                 window.location.reload();
     }
 
-    updataEmployee=(id)=>{
-
-  alert('success')
-    }
-
     render() {
         return (
             <>
@@ -57,8 +52,8 @@ export class EmployeeDetails extends Component {
                                         <td>{emp.phoneNumber}</td>
                                         <td>{emp.email}</td>
                                         <td>{emp.password}</td>
-                                        <td> <button onClick={() => this.updataEmployee(emp.employeeId)} variant="success">update</button>
-                                            <button onClick={() => this.deleteEmployeedata(emp.employeeId)} variant="danger">delete</button></td>
+                                        <td> <button className="Update">update</button>
+                                            <button onClick={() => this.deleteEmployeedata(emp.employeeId)} className="del">delete</button></td>
                                     </tr>
                                 )
                             }

@@ -1,5 +1,6 @@
-.App {      
-  text-align: center;
+.App {   
+background-color: lightcyan;
+text-align: center;
 }      
 .navheader{      
   margin-top: 10px;      
@@ -47,4 +48,32 @@ padding: 8px;
 
 tr:nth-child(even) {
 background-color: #dddddd;
+}
+
+.labale{
+  text-align: center;
+  background-color: aqua;
+}
+
+.navbar{
+  background-color: aquamarine;
+  height: 2rem;
+  font-weight: bold;
+  word-break: break-all;
+  text-align: left;
+}
+
+.del{
+  background-color: red;
+}
+
+.Update{
+  background-color: yellow;
+}
+#record{
+  text-align: center;
+
+}
+.Submit{
+  background-color: green;
 }

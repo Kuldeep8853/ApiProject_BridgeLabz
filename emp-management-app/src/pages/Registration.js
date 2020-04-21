@@ -103,7 +103,7 @@ export class Registration extends Component {
                         <input type="password" className="input-password-text" placeholder="Enter password" onChange={this.handlepasswordChang} />
                     </div>
                     <div className="app-button">
-                        <Button onClick={this.handleRegister} color="success" block>Register</Button>
+                        <Button onClick={this.handleRegister} className="Submit" block>Register</Button>
                     </div>
                 </div>
             </div>

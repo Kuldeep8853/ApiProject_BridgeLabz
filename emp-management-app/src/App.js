@@ -11,15 +11,15 @@ import Home from './pages/Home';
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <h1 className="App">Employee Management Portal</h1>
+      <div className='App'>
+        <h1 className="labale">Employee Management Portal</h1>
         <Navigation/>
         <Switch>
         <Route path='/' component={Home} exact />
           <Route path='/Registration' component={Registration} />
           <Route path='/Login' component={Login} />
           <Route path='/EmployeeDetails' component={EmployeeDetails} />
-          <Route path='/UpdareEmployee' component={UpdateEmployee} />
+          <Route path='/UpdateEmployee' component={UpdateEmployee} />
         </Switch>
       </div>
     </BrowserRouter>

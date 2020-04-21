@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Length from './Pages/Length';
+import Temprature from './Pages/Temprature';
+import Weight from './Pages/Weight';
+import { QuantityRow } from './component/QuantityRow';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="optionColor">
+        <h1>Quantity Measurment</h1>
+        <QuantityRow/>
+        <BrowserRouter>
+      <div>
+        <Switch>
+        <Route path='/' component={Length} exact />
+        <Route path='/' component={Weight} exact />
+        <Route path='/' component={Temprature} exact/>
+        </Switch>
+      </div>
+    </BrowserRouter>
+      </div>
     </div>
   );
 }
-
 export default App;

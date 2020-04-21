@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj",
+      "projectUniqueName": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj",
+      "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\Kuldeep\\.nuget\\packages\\",
-      "outputPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\obj\\",
+      "outputPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

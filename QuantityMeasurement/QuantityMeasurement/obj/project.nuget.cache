@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3L8b3AKzSWchvtvt2zOqqMwjc2yfFU23GAxH+Ae2xLkYhCz0rhnq1m3G/2/7TNt4s7pRVcKI4VAxUBrTQkiu8w==",
+  "dgSpecHash": "En/Et4U5AjYwTPEGwm0eMM3eT4s9WOWoK9Z/MggY5RHJiTuvAgOcDW5z4yPfRQ3CVBo8IADQsgNu+f7UucdKJw==",
   "success": true,
-  "projectFilePath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj",
+  "projectFilePath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kuldeep\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Kuldeep\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

@@ -12752,6 +12752,7 @@
       "Convertor >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
+      "Microsoft.AspNetCore.Server.Kestrel >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
       "Swashbuckle.AspNetCore.Swagger >= 4.0.1",
@@ -12766,11 +12767,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj",
+      "projectUniqueName": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj",
       "projectName": "QuantityMeasurement",
-      "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj",
+      "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj",
       "packagesPath": "C:\\Users\\Kuldeep\\.nuget\\packages\\",
-      "outputPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\QuantityMeasurement\\obj\\",
+      "outputPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\QuantityMeasurement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12789,8 +12790,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Convertor\\Convertor.csproj": {
-              "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Convertor\\Convertor.csproj"
+            "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Convertor\\Convertor.csproj": {
+              "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Convertor\\Convertor.csproj"
             }
           }
         }
@@ -12814,6 +12815,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.2, )"
+          },
+          "Microsoft.AspNetCore.Server.Kestrel": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",

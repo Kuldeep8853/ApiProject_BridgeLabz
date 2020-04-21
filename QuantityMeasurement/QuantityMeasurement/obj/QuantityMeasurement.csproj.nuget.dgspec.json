@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "B:\\BridgeLbz_Projects\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj": {}
+    "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj": {}
   },
   "projects": {
-    "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Convertor\\Convertor.csproj": {
+    "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Convertor\\Convertor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Convertor\\Convertor.csproj",
+        "projectUniqueName": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Convertor\\Convertor.csproj",
         "projectName": "Convertor",
-        "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Convertor\\Convertor.csproj",
+        "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Convertor\\Convertor.csproj",
         "packagesPath": "C:\\Users\\Kuldeep\\.nuget\\packages\\",
-        "outputPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Convertor\\obj\\",
+        "outputPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Convertor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj": {
-                "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj"
+              "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\Model.csproj": {
+                "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\Model.csproj"
               },
-              "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Repository\\Repository.csproj": {
-                "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Repository\\Repository.csproj"
+              "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Repository\\Repository.csproj": {
+                "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Repository\\Repository.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj": {
+    "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj",
+        "projectUniqueName": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj",
+        "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\Kuldeep\\.nuget\\packages\\",
-        "outputPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\obj\\",
+        "outputPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -127,14 +127,14 @@
         }
       }
     },
-    "B:\\BridgeLbz_Projects\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj": {
+    "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj",
+        "projectUniqueName": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj",
         "projectName": "QuantityMeasurement",
-        "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj",
+        "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\QuantityMeasurement\\QuantityMeasurement.csproj",
         "packagesPath": "C:\\Users\\Kuldeep\\.nuget\\packages\\",
-        "outputPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\QuantityMeasurement\\obj\\",
+        "outputPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\QuantityMeasurement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -153,8 +153,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Convertor\\Convertor.csproj": {
-                "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Convertor\\Convertor.csproj"
+              "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Convertor\\Convertor.csproj": {
+                "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Convertor\\Convertor.csproj"
               }
             }
           }
@@ -178,6 +178,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.2, )"
+            },
+            "Microsoft.AspNetCore.Server.Kestrel": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -216,14 +220,14 @@
         }
       }
     },
-    "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Repository\\Repository.csproj": {
+    "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Repository\\Repository.csproj",
+        "projectUniqueName": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Repository\\Repository.csproj",
+        "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Kuldeep\\.nuget\\packages\\",
-        "outputPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Repository\\obj\\",
+        "outputPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -242,8 +246,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj": {
-                "projectPath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj"
+              "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\Model.csproj": {
+                "projectPath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\Model.csproj"
               }
             }
           }

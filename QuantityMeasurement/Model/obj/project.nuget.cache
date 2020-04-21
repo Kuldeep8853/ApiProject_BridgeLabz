@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ms8p3az2JbK6PEiqhxIJSomWV8GQ1Oeah+Ip8nmGbBF4tuygQKq4kAjzja2q0PnIf+9A6NKIcU0Rkjf3fdZdnA==",
+  "dgSpecHash": "J9pLEkajc8MhP8mzplno/Axu1pmlQ9oUyjfPVLCtaWOe9HSqK9wGNpAwA3tVhpCgxvM2Q5DDrzx87aiA53WsYQ==",
   "success": true,
-  "projectFilePath": "B:\\BridgeLbz_Projects\\QuantityMeasurement\\Model\\Model.csproj",
+  "projectFilePath": "B:\\ApiProject_BridgeLabz\\QuantityMeasurement\\Model\\Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kuldeep\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
     "C:\\Users\\Kuldeep\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",

@@ -1,10 +1,13 @@
 import React from 'react'
+import { CelciusToFahrenheit } from '../Controller/Services';
 
 export class Temprature extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             temprature: '',
+            inputParameter: 'Celcious',
+            outputParameter:'Fahrenhite',
         };
     }
     handleTempChang = (event) => {
@@ -13,6 +16,16 @@ export class Temprature extends React.Component {
             temprature: temprature
         });
         console.log("length", this.state.temprature);
+    }
+
+    componentDidUpdate(temprature){
+        CelciusToFahrenheit(temprature)
+        .then(response => {
+            console.log("Converter response====>", response);
+
+        }).catch((err) => {
+            console.log("error while converting Celcius To Fahrenheit----------", err);
+        });
     }
 
     render() {

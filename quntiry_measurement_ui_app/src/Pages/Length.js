@@ -1,19 +1,30 @@
 import React from 'react'
+import { InchToFeet } from '../Controller/Services';
 
 export class Length extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            length: '',
+            length: parseInt(''),
+            inputParameter: 'Inch',
+            outputParameter:'Feet',
         };
     }
+
     handleLengthChang = (event) => {
-        const length = event.target.value;
-        this.setState({
-            length: length
-        });
-        console.log("length", this.state.length);
+        this.setState({ length: event.target.value });
+        console.log(this.state.length);
     }
+
+    componentDidUpdate(length){
+        InchToFeet(length)
+        .then(response => {
+            console.log("Converter response====>", response);
+
+        }).catch((err) => {
+            console.log("error while converting Inch to feet----------", err);
+        });
+        }
 
     render() {
         return (

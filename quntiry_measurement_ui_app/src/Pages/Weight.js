@@ -1,10 +1,13 @@
 import React from 'react'
+import { KgToGm } from '../Controller/Services';
 
 export class Weight extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            weight: '',
+            weight: parseInt(''),
+            inputParameter: 'Kilogram',
+            outputParameter:'Gram',
         };
     }
     handleWeightChang = (event) => {
@@ -13,6 +16,16 @@ export class Weight extends React.Component {
             weight: weight
         });
         console.log("length", this.state.weight);
+    }
+
+    componentDidUpdate(weight){
+        KgToGm(weight)
+        .then(response => {
+            console.log("Converter response====>", response);
+
+        }).catch((err) => {
+            console.log("error while converting Kg to Gm----------", err);
+        });
     }
 
     render() {

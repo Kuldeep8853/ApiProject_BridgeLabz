@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import { deleteEmployee } from '../services/Controller'
+import { deleteEmployee, getAllData } from '../services/Controller'
 
 export class EmployeeDetails extends Component {
     constructor(props) {
@@ -11,7 +10,7 @@ export class EmployeeDetails extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://localhost:44344/api/controller/GetAllEmployee")
+        getAllData()
             .then(results => {
                 this.setState({ Employee: results.data });
                 console.log(results.data);

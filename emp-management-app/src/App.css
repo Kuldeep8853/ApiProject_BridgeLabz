@@ -21,18 +21,21 @@ width: 15%;
 padding: 8px 15px;
 margin: 8px 0;
 box-sizing: border-box;
+border-radius: 10px;
 }
 input[type=email] {
 width: 15%;
 padding: 8px 15px;
 margin: 8px 0;
 box-sizing: border-box;
+border-radius: 10px;
 }
 input[type=password] {
 width: 15%;
 padding: 8px 15px;
 margin: 8px 0;
 box-sizing: border-box;
+border-radius: 10px;
 }
 table {
 font-family: arial, sans-serif;
@@ -65,15 +68,18 @@ background-color: #dddddd;
 
 .del{
   background-color: red;
+  border-radius: 10px;
 }
 
 .Update{
   background-color: yellow;
+  border-radius: 10px;
 }
 #record{
   text-align: center;
 
 }
 .Submit{
-  background-color: green;
+  background-color: #ccc;
+  border-radius: 10px;
 }

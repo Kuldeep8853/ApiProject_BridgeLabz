@@ -13,6 +13,19 @@ export async function userLogin(id, password) {
     }
 }
 
+export async function getAllData() {
+    try {
+        return axios.get('https://localhost:44344/api/controller/GetAllEmployee')
+            .then(response => {
+                return response
+            })
+    }
+    catch (error) {
+        console.log("error while geting all Employee" + error)
+        return Promise.resolve(false)
+    }
+}
+
 export async function addEmployee(data) {
     var headers = {
         'Content-Type': 'application/json'

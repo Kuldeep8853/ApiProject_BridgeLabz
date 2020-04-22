@@ -67,19 +67,25 @@ export class Registration extends Component {
             PassWord: this.state.PassWord
         }
         console.log("data", data);
-        addEmployee(data).then((response) => {
-            this.setState({
-                addItemOpen: true,
-                spinner: false
+        if (data!=='undefined') {
+            addEmployee(data).then((response) => {
+                this.setState({
+                    addItemOpen: true,
+                    spinner: false
+                })
+                console.log("Add new Employee response====>", response);
+                alert('You have successfully registered');
+                window.location.reload();
             })
-            console.log("Add new Employee response====>", response);
-            alert('You have successfully registered');
-            window.location.reload();
-        })
-            .catch((err) => {
-                console.log("error occured while adding----------", err);
-                alert('Your Registration Failed');
-            });
+
+                .catch((err) => {
+                    console.log("error occured while adding----------", err);
+                    alert('Your Registration Failed');
+                });
+        }
+        else{
+            alert('Please Enter the data')
+        }
     }
 
     render() {

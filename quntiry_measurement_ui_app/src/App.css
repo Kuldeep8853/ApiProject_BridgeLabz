@@ -2,11 +2,11 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  width:800px; 
-  margin:0
-   auto;
-   margin-top: 0
-   auto;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(176, 196, 222, 0.226);
 }
 
 .optionColor{
@@ -20,19 +20,22 @@
 h1{
   margin: 0;
   margin-bottom: .5rem;
-background-color: lightseagreen;
+  background-color: rgba(135, 242, 250, 0.911);
+
 }
 .input{
   border-radius: .3em;
   padding: .25rem;
   width: 10em;
   border: 1px solid #333;
+  background-color: antiquewhite;
 }
 select{
   margin-left: .5rem;
   width: 3rem;
   padding: .5rem;
   border-radius: .3em;
+  background-color: rgba(254, 220, 255, 0.589);
 }
 
 .SelectItems{
@@ -58,5 +61,8 @@ select{
   margin-bottom: 1rem;
   margin-top: 2rem;
   width: 18rem;
+}
+.head{
+  background-color: gray;
 }
 

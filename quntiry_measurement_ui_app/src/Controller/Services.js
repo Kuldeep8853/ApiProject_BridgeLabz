@@ -1,13 +1,9 @@
 const axios = require('axios');
 
 export async function InchToFeet(length) {
-    var headers = {
-        'accept': 'application/json'
-    }
     try {
-        return axios.get('https://localhost:5001/api/Length/api/InchToFeet?inch='+length, { headers: headers })
+        return axios.get(`https://localhost:5001/api/Length/api/InchToFeet?inch=${length}`)
             .then(response => {
-                console.log(response)
                 return response
             })
     }
@@ -18,13 +14,10 @@ export async function InchToFeet(length) {
 }
 
 export async function FeetToInch(length) {
-    var headers = {
-        'accept': 'application/json'
-    }
+   
     try {
-        return axios.get('https://localhost:5001/api/Length/api/FeetToInch?feet='+length, { headers: headers })
+        return axios.get(`https://localhost:5001/api/Length/api/FeetToInch?feet=${length}`)
             .then(response => {
-                console.log(response)
                 return response
             })
     }
@@ -35,13 +28,9 @@ export async function FeetToInch(length) {
 }
 
 export async function KgToGm(weight) {
-    var headers = {
-        'accept': 'application/json'
-    }
     try {
-        return axios.get('https://localhost:5001/api/Weight/api/KgToGm?kg='+weight, { headers: headers })
+        return axios.get(`https://localhost:5001/api/Weight/api/KgToGm?kg=${weight}`)
             .then(response => {
-                console.log(response)
                 return response
             })
     }
@@ -52,13 +41,9 @@ export async function KgToGm(weight) {
 }
 
 export async function GmToKg(weight) {
-    var headers = {
-        'accept': 'application/json'
-    }
     try {
-        return axios.get('https://localhost:5001/api/Weight/api/GmToKg?gm='+weight, { headers: headers })
+        return axios.get(`https://localhost:5001/api/Weight/api/GmToKg?gm=${weight}`)
             .then(response => {
-                console.log(response)
                 return response
             })
     }
@@ -69,13 +54,9 @@ export async function GmToKg(weight) {
 }
 
 export async function CelciusToFahrenheit(temprature) {
-    var headers = {
-        'accept': 'application/json'
-    }
     try {
-        return axios.get('https://localhost:5001/api/Temp/api/CelciusToFahrenheit?celcious='+temprature, { headers: headers })
+        return axios.get(`https://localhost:5001/api/Temp/api/CelciusToFahrenheit?celcious=${temprature}`)
             .then(response => {
-                console.log(response)
                 return response
             })
     }
@@ -86,11 +67,8 @@ export async function CelciusToFahrenheit(temprature) {
 }
 
 export async function FahrenheitToCelcius(temprature) {
-    var headers = {
-        'accept': 'application/json'
-    }
     try {
-        return axios.get('https://localhost:5001/api/Temp/api/FahrenheitToCelcius?fahrenheit='+temprature, { headers: headers })
+        return axios.get(`https://localhost:5001/api/Temp/api/FahrenheitToCelcius?fahrenheit=${temprature}`)
             .then(response => {
                 console.log(response)
                 return response

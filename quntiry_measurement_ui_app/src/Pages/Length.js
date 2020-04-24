@@ -1,14 +1,19 @@
 import React from 'react'
-import { InchToFeet } from '../Controller/Services';
+import { InchToFeet, FeetToInch} from '../Controller/Services';
 
 export class Length extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            length: parseInt(''),
-            inputParameter: 'Inch',
-            outputParameter:'Feet',
+             length:'',
+             input:'',
+             result:'',
         };
+    }
+
+    handleOnOption=(event)=>{
+        this.setState({ input: event.target.value });
+        console.log(this.state.input);
     }
 
     handleLengthChang = (event) => {
@@ -16,14 +21,21 @@ export class Length extends React.Component {
         console.log(this.state.length);
     }
 
-    componentDidUpdate(length){
-        InchToFeet(length)
-        .then(response => {
-            console.log("Converter response====>", response);
-
+    componentDidUpdate(){
+        if(this.state.input=== 'Inch' && this.state.input!== 'Feet')
+        InchToFeet(this.state.length).then(response => {
+            this.setState({result:response.data})
         }).catch((err) => {
             console.log("error while converting Inch to feet----------", err);
         });
+
+        if(this.state.input!== 'Inch' && this.state.input=== 'Feet')
+        FeetToInch(this.state.length).then(response => {
+            this.setState({result:response.data})
+        }).catch((err) => {
+            console.log("error while converting feet to----------", err);
+        });
+
         }
 
     render() {
@@ -31,14 +43,14 @@ export class Length extends React.Component {
             <>
                 <div>
                     <input type="number" className="input" onChange={this.handleLengthChang} />
-                    <select className="SelectItems" >
+                    <select className="SelectItems" onClick={this.handleOnOption}>
                         <option value="Feet">Feet</option>
                         <option value="Inch"> Inch</option>
                     </select>
                 </div>
                 <div className="equal">=</div>
                 <div>
-                    <input type="number" className="input" onChange={this.handleLengthChang} />
+                    <input type="number" className="input" value={this.state.result} />
                     <select className="SelectItems" >
                         <option value="Feet">Feet</option>
                         <option value="Inch"> Inch</option>

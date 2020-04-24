@@ -1,13 +1,13 @@
 import React from 'react'
-import { CelciusToFahrenheit } from '../Controller/Services';
+import { CelciusToFahrenheit, FahrenheitToCelcius } from '../Controller/Services';
 
 export class Temprature extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             temprature: '',
-            inputParameter: 'Celcious',
-            outputParameter:'Fahrenhite',
+             input:'',
+             result:'',
         };
     }
     handleTempChang = (event) => {
@@ -18,13 +18,24 @@ export class Temprature extends React.Component {
         console.log("length", this.state.temprature);
     }
 
-    componentDidUpdate(temprature){
-        CelciusToFahrenheit(temprature)
-        .then(response => {
-            console.log("Converter response====>", response);
+    handleOnOption=(event)=>{
+        this.setState({ input: event.target.value });
+        console.log(this.state.input);
+    }
 
+    componentDidUpdate(){
+        if(this.state.input=== 'Celcious' && this.state.input!== 'Fahrenhite')
+        CelciusToFahrenheit(this.state.temprature).then(response => {
+            this.setState({result:response.data})
         }).catch((err) => {
             console.log("error while converting Celcius To Fahrenheit----------", err);
+        });
+
+        if(this.state.input!== 'Celcious' && this.state.input=== 'Fahrenhite')
+        FahrenheitToCelcius(this.state.temprature).then(response => {
+            this.setState({result:response.data})
+        }).catch((err) => {
+            console.log("error while converting Fahrenheit To Celcius----------", err);
         });
     }
 
@@ -33,14 +44,14 @@ export class Temprature extends React.Component {
             <>
                 <div>
                     <input type="number" className="input" onChange={this.handleTempChang} />
-                    <select className="SelectItems">
+                    <select className="SelectItems" onClick={this.handleOnOption}>
                         <option value="Celcious">Celcious</option>
                         <option value="Fahrenhite">Fahrenhite</option>
                     </select>
                 </div>
                 <div className="equal">=</div>
                 <div>
-                    <input type="number" className="input" onChange={this.handleTempChang} />
+                    <input type="number" className="input" value={this.state.result}  onClick={this.onClick}/>
                     <select className="SelectItems">
                         <option value="Celcious">Celcious</option>
                         <option value="Fahrenhite">Fahrenhite</option>

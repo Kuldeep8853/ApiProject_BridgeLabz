@@ -36,7 +36,7 @@ namespace ParkingLot_Problem
             services.AddTransient<IDriverRepository, DriverRepository>();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "EmployeeManagment", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "ParkingLot_Problem", Version = "v1" });
             });
         }
 

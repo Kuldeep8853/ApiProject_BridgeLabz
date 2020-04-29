@@ -33,10 +33,9 @@ namespace ParkingLot_Problem.Controllers
 
         [Route("UnParkVahical")]
         [HttpDelete]
-        public async Task<IActionResult> UnParking_Vahical(long ParkingSlotId)
+        public string UnParking_Vahical(int ParkingSlotId)
         {
-            this.driverManager.UnParking(ParkingSlotId);
-            return this.NoContent();
+           return this.driverManager.UnParking(ParkingSlotId);
         }
     }
 }

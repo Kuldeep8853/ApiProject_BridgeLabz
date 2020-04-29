@@ -9,6 +9,6 @@ namespace Manager.DriverManager
     public interface IDriverManager
     {
         Task<int> Parkking(Parking parking);
-        void UnParking(long parkingSlotId);
+        string UnParking(int parkingSlotId);
     }
 }

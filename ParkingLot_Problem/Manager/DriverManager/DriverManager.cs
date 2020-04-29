@@ -21,9 +21,9 @@ namespace Manager.DriverManager
             return this.driverRepository.Parkking(parking);
         }
 
-        public void UnParking(long parkingSlotId)
+        public string UnParking(int parkingSlotId)
         {
-            this.driverRepository.UnParking(parkingSlotId);
+            return this.driverRepository.UnParking(parkingSlotId);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Repository.DriverRepository
     public class DriverRepository : IDriverRepository
     {
         private readonly UserContextDB userContext;
-
+        
         public DriverRepository(UserContextDB userContext)
         {
             this.userContext = userContext;
@@ -23,11 +23,11 @@ namespace Repository.DriverRepository
             return result;
         }
 
-        public void UnParking(long ParkingSlotId)
+        public string UnParking(int ParkingSlotId)
         {
             Parking parking=this.userContext.ParkingSpace.Find(ParkingSlotId);
             this.userContext.ParkingSpace.Remove(parking);
-            this.userContext.SaveChanges();
+            return Utility.Receipt(parking.ChargesPerHour, parking.EntryTime);
         }
     }
 }

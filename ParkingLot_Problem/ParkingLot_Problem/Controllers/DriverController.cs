@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Manager.DriverManager;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Model;
+
+namespace ParkingLot_Problem.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class DriverController : ControllerBase
+    {
+        private readonly IDriverManager driverManager;
+
+        public DriverController(IDriverManager driverManager)
+        {
+            this.driverManager = driverManager;
+        }
+
+        [Route("ParkVahical")]
+        [HttpPost]
+        public async Task<IActionResult> Parking_Vahical(Parking parking)
+        {
+            var result = await this.driverManager.Parkking(parking);
+            if (result == 1)
+                return this.Ok(parking);
+
+            return this.BadRequest();
+        }
+
+        [Route("UnParkVahical")]
+        [HttpDelete]
+        public async Task<IActionResult> UnParking_Vahical(long ParkingSlotId)
+        {
+            this.driverManager.UnParking(ParkingSlotId);
+            return this.NoContent();
+        }
+    }
+}

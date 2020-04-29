@@ -1,0 +1,15 @@
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\bin\Debug\netcoreapp2.1\Repository.runtimeconfig.json
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\bin\Debug\netcoreapp2.1\Repository.runtimeconfig.dev.json
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\bin\Debug\netcoreapp2.1\Model.dll
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\bin\Debug\netcoreapp2.1\Model.pdb
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Repository\obj\Debug\netcoreapp2.1\Repository.genruntimeconfig.cache

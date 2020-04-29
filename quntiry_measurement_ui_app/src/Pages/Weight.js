@@ -10,6 +10,7 @@ export class Weight extends React.Component {
              result:'',
         };
     }
+    
     handleWeightChang = (event) => {
         const weight = event.target.value;
         this.setState({

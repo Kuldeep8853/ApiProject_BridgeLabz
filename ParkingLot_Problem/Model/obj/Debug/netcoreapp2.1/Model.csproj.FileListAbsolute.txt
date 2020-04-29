@@ -1,7 +1,6 @@
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\bin\Debug\netcoreapp2.1\Model.deps.json
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\bin\Debug\netcoreapp2.1\Model.dll
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\bin\Debug\netcoreapp2.1\Model.pdb
-B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs

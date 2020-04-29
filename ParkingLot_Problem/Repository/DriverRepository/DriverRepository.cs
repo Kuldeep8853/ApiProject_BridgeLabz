@@ -7,7 +7,7 @@ namespace Repository.DriverRepository
     public class DriverRepository : IDriverRepository
     {
         private readonly UserContextDB userContext;
-        
+
         public DriverRepository(UserContextDB userContext)
         {
             this.userContext = userContext;
@@ -22,7 +22,7 @@ namespace Repository.DriverRepository
 
         public string UnParking(int ParkingSlotId)
         {
-            Parking parking=this.userContext.ParkingSpace.Find(ParkingSlotId);
+            Parking parking = this.userContext.ParkingSpace.Find(ParkingSlotId);
             this.userContext.ParkingSpace.Remove(parking);
             return Utility.Receipt(parking.ChargesPerHour, parking.EntryTime);
         }

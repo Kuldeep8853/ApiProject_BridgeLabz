@@ -18,12 +18,14 @@ namespace Repository.DriverRepository
             this.userContext.ParkingSpace.Add(parking);
             var result = this.userContext.SaveChangesAsync();
             return result;
+
         }
 
         public string UnParking(int ParkingSlotId)
         {
             Parking parking = this.userContext.ParkingSpace.Find(ParkingSlotId);
             this.userContext.ParkingSpace.Remove(parking);
+            this.userContext.SaveChanges();
             return Utility.Receipt(parking.ChargesPerHour, parking.EntryTime);
         }
     }

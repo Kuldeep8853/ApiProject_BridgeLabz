@@ -10,6 +10,6 @@ namespace Manager.OwnerManager
     {
         IEnumerable<Parking> GetAll();
         Task<int> Parkking(Parking parking);
-        void UnParking(long parkingSlotId);
+        string UnParking(int ParkingSlotId);
     }
 }

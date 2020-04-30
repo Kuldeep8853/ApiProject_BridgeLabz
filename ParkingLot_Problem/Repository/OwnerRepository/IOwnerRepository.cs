@@ -10,6 +10,6 @@ namespace Repository.OwnerRepository
     {
         IEnumerable<Parking> GetAll();
         Task<int> Parkking(Parking parking);
-        void UnParking(long ParkingSlotId);
+        string UnParking(int ParkingSlotId);
     }
 }

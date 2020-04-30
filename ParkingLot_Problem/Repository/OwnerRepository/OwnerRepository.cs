@@ -1,5 +1,6 @@
 ﻿using Model;
 using Repository.UserContext;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace Repository.OwnerRepository
         {
             this.userContext = userContext;
         }
+
         public IEnumerable<Parking> GetAll()
         {
             return this.userContext.ParkingSpace.ToList();
@@ -26,11 +28,22 @@ namespace Repository.OwnerRepository
             return result;
         }
 
-        public void UnParking(long ParkingSlotId)
+        public string UnParking(int ParkingSlotId)
         {
-            Parking parking = this.userContext.ParkingSpace.Find(ParkingSlotId);
-            this.userContext.ParkingSpace.Remove(parking);
-            this.userContext.SaveChanges();
+            try
+            {
+                Parking parking = this.userContext.ParkingSpace.Find(ParkingSlotId);
+                if (parking == null)
+                    throw new ParkingLotException("This ParkingSlotId is Empty");
+                this.userContext.ParkingSpace.Remove(parking);
+                this.userContext.SaveChanges();
+                return Utility.Receipt(parking.ChargesPerHour, parking.EntryTime);
+            }
+            catch (ParkingLotException e)
+            {
+                return e.mgs;
+            }
         }
     }
 }
+ 

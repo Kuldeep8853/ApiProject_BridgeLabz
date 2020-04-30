@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 
 namespace Manager.OwnerManager
 {
-    public class OwnerManager: IOwnerManager
+    public class OwnerManager : IOwnerManager
     {
         private readonly IOwnerRepository ownerRepository;
-public OwnerManager(IOwnerRepository ownerRepository)
+        public OwnerManager(IOwnerRepository ownerRepository)
         {
             this.ownerRepository = ownerRepository;
         }
 
         public IEnumerable<Parking> GetAll()
         {
-            return this.ownerRepository.GetAll();
+            return ownerRepository.GetAll();
         }
 
         public Task<int> Parkking(Parking parking)
         {
-            return this.Parkking(parking);
+            return ownerRepository.Parkking(parking);
         }
 
-        public void UnParking(long parkingSlotId)
+        public string UnParking(int ParkingSlotId)
         {
-            this.ownerRepository.UnParking(parkingSlotId);
+            return ownerRepository.UnParking(ParkingSlotId);
         }
     }
 }

@@ -23,10 +23,19 @@ namespace Repository.DriverRepository
 
         public string UnParking(int ParkingSlotId)
         {
-            Parking parking = this.userContext.ParkingSpace.Find(ParkingSlotId);
-            this.userContext.ParkingSpace.Remove(parking);
-            this.userContext.SaveChanges();
-            return Utility.Receipt(parking.ChargesPerHour, parking.EntryTime);
+            try
+            {
+                Parking parking = this.userContext.ParkingSpace.Find(ParkingSlotId);
+                if (parking == null)
+                    throw new ParkingLotException("This slot id is empty");
+                this.userContext.ParkingSpace.Remove(parking);
+                this.userContext.SaveChanges();
+                return Utility.Receipt(parking.ChargesPerHour, parking.EntryTime);
+            }
+            catch(ParkingLotException e)
+            {
+                return e.mgs;
+            }
         }
     }
 }

@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Repository.SecurityRepository
 {
-    interface ISecurityRepository
+    public interface ISecurityRepository
     {
+        Task<int> Parkking(Parking parking);
+        string UnParking(int ParkingSlotId);
     }
 }

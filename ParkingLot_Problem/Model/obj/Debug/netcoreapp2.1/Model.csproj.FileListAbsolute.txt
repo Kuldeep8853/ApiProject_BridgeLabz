@@ -6,3 +6,4 @@ B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\obj\Debug\netcoreapp2.1\Model.
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\obj\Debug\netcoreapp2.1\Model.dll
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\obj\Debug\netcoreapp2.1\Model.pdb
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache

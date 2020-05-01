@@ -35,10 +35,13 @@ namespace Repository.Migrations
                     b.Property<string>("ParkingType")
                         .IsRequired();
 
-                    b.Property<string>("VehicalNo")
+                    b.Property<string>("VahicalColore")
                         .IsRequired();
 
-                    b.Property<string>("VehicalType")
+                    b.Property<string>("VehicalBrand")
+                        .IsRequired();
+
+                    b.Property<string>("VehicalNo")
                         .IsRequired();
 
                     b.HasKey("ParkingSlotNo");

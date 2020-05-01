@@ -14,8 +14,12 @@ namespace Model
         public string VehicalNo { get; set; }
 
         [Required]
-        public string VehicalType { get; set; }
+        public string VehicalBrand { get; set; }
 
+        [Required]
+        public string VahicalColore { get; set; }
+
+        [Required]
         public int ChargesPerHour { get; set; }
 
         [Required]
@@ -26,12 +30,5 @@ namespace Model
 
         [Required]
         public string ParkingType { get; set; }
-
-        public Parking()
-        {
-            var time = DateTime.Now;
-            ChargesPerHour = 10;
-            EntryTime = time;
-        }
     }
 }

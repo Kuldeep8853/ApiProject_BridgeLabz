@@ -9,25 +9,25 @@ namespace Manager.SecurityManager
 {
     public class SecurtyManager : ISecurityManager
     {
-        private readonly ISecurityRepository securityRepository;
+        private readonly ISecurityRepository _securityRepository;
 
         public SecurtyManager(ISecurityRepository securityRepository)
         {
-            this.securityRepository = securityRepository;
+            this._securityRepository = securityRepository;
         }
 
         public Task<int> Parkking(Parking parking)
         {
-           return this.Parkking(parking);
+           return this._securityRepository.Parkking(parking);
         }
 
         public string Check_Parking_Open_Full()
         {
-            return this.Check_Parking_Open_Full();
+            return this._securityRepository.Check_Parking_Open_Full();
         }
         public string UnParking(int parkingSlotId)
         {
-           return this.UnParking(parkingSlotId);
+           return this._securityRepository.UnParking(parkingSlotId);
         }
     }
 }

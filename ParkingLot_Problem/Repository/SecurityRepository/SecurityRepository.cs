@@ -27,7 +27,7 @@ namespace Repository.SecurityRepository
 
         public string Check_Parking_Open_Full()
         {
-            int Number_Vahical = this.userContext.ParkingSpace.ToList().Count();
+            int Number_Vahical = this.userContext.ParkingSpace.ToList().Count;
             if (Number_Vahical < 100)
                 return "Parking Open";
 

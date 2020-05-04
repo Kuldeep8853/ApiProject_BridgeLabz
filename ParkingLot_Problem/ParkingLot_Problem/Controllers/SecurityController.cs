@@ -35,9 +35,9 @@ namespace ParkingLot_Problem.Controllers
         [HttpGet]
         public string Check_Parking_Open_Full()
         {
-            return this.securityManager.Check_Parking_Open_Full();
+            string result= this.securityManager.Check_Parking_Open_Full();
+            return result;
         }
-
 
         [Route("UnParkVahical")]
         [HttpDelete]

@@ -17,5 +17,7 @@ namespace Repository
 
             return ("Parking Entry Time = " + EntryTime + "@\n" + "Parking Exit Time = " + DateTime.Now + "@\n" + "Parking Charges = " + Amount);
         }
+
+       
     }
 }

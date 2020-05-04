@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Manager.DriverManager;
+﻿using Manager.DriverManager;
 using Manager.OwnerManager;
+using Manager.PoliceManager;
+using Manager.SecurityManager;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -15,6 +13,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Repository.DriverRepository;
 using Repository.OwnerRepository;
+using Repository.PoliceRepository;
+using Repository.SecurityRepository;
 using Repository.UserContext;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -38,6 +38,10 @@ namespace ParkingLot_Problem
             services.AddTransient<IDriverRepository, DriverRepository>();
             services.AddTransient<IOwnerManager, OwnerManager>();
             services.AddTransient<IOwnerRepository, OwnerRepository>();
+            services.AddTransient<IPoliceManager, PoliceManager>();
+            services.AddTransient<IPoliceRepository, PoliceRepository>();
+            services.AddTransient<ISecurityManager, SecurtyManager>();
+            services.AddTransient<ISecurityRepository, SecurityRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "ParkingLot_Problem", Version = "v1" });

@@ -31,6 +31,22 @@ namespace ParkingLot_Problem.Controllers
             return this.BadRequest();
         }
 
+        [Route("GetDetailsByColor")]
+        [HttpGet]
+        public IEnumerable<Parking> GetDetails_Color(string color)
+        {
+            return this.policeManager.GetDetails_Color(color);
+           
+        }
+
+        [Route("GetDetailsByBrandName")]
+        [HttpGet]
+        public IEnumerable<Parking> GetDetails_BrandName(string BrandName)
+        {
+            return this.policeManager.GetDetails_BrandName(BrandName);
+
+        }
+
         [Route("UnParkVahical")]
         [HttpDelete]
         public string UnParking_Vahical(int ParkingSlotId)

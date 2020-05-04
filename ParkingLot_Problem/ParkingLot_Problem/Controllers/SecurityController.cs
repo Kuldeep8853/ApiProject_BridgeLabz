@@ -31,6 +31,14 @@ namespace ParkingLot_Problem.Controllers
             return this.BadRequest();
         }
 
+        [Route("CheckParkingOpen_Full")]
+        [HttpGet]
+        public string Check_Parking_Open_Full()
+        {
+            return this.securityManager.Check_Parking_Open_Full();
+        }
+
+
         [Route("UnParkVahical")]
         [HttpDelete]
         public string UnParking_Vahical(int ParkingSlotId)

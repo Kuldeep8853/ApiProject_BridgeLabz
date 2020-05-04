@@ -9,6 +9,7 @@ namespace Manager.SecurityManager
     public interface ISecurityManager
     {
         Task<int> Parkking(Parking parking);
+        string Check_Parking_Open_Full();
         string UnParking(int parkingSlotId);
     }
 }

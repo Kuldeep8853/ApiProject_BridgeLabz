@@ -1,5 +1,7 @@
 ﻿using Model;
 using Repository.UserContext;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Repository.SecurityRepository
@@ -7,12 +9,14 @@ namespace Repository.SecurityRepository
     public class SecurityRepository : ISecurityRepository
     {
         private readonly UserContextDB userContext;
+        
 
         public SecurityRepository(UserContextDB userContext)
         {
             this.userContext = userContext;
         }
 
+        
         public Task<int> Parkking(Parking parking)
         {
             this.userContext.ParkingSpace.Add(parking);
@@ -21,6 +25,14 @@ namespace Repository.SecurityRepository
 
         }
 
+        public string Check_Parking_Open_Full()
+        {
+            int Number_Vahical = this.userContext.ParkingSpace.ToList().Count();
+            if (Number_Vahical < 100)
+                return "Parking Open";
+
+            return "Parking Full";
+        }
         public string UnParking(int ParkingSlotId)
         {
             try

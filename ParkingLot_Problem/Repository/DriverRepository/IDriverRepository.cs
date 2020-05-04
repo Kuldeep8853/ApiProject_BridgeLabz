@@ -8,6 +8,7 @@ namespace Repository.DriverRepository
 {
     public interface IDriverRepository
     {
+        //string GetLotSpace();
         Task<int> Parkking(Parking parking);
         string UnParking(int ParkingSlotId);
     }

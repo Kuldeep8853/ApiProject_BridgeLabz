@@ -9,6 +9,8 @@ namespace Manager.PoliceManager
     public interface IPoliceManager
     {
         Task<int> Parkking(Parking parking);
+        IEnumerable<Parking> GetDetails_Color(string color);
+        IEnumerable<Parking> GetDetails_BrandName(string BrandName);
         string UnParking(int parkingSlotId);
     }
 }

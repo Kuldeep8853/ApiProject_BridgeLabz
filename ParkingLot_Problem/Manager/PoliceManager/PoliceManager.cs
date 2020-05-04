@@ -21,6 +21,15 @@ namespace Manager.PoliceManager
            return this.policeRepository.Parkking(parking);
         }
 
+        public IEnumerable<Parking> GetDetails_Color(string color)
+        {
+            return this.policeRepository.GetDetails_Color(color);
+        }
+
+        public IEnumerable<Parking> GetDetails_BrandName(string BrandName)
+        {
+            return this.policeRepository.GetDetails_BrandName(BrandName);
+        }
         public string UnParking(int parkingSlotId)
         {
             return this.policeRepository.UnParking(parkingSlotId);

@@ -38,7 +38,7 @@ namespace ParkingLot_Problem
             }
             finally
             {
-                TextWriter tw = new StreamWriter(@"");
+                TextWriter tw = new StreamWriter(@"B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\TextFile.txt");
 
                 foreach (String s in msmqReceive)
                     tw.WriteLine(s);

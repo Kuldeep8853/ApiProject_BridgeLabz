@@ -13,6 +13,7 @@ namespace ParkingLot_Problem.Controllers
     [ApiController]
     public class SecurityController : ControllerBase
     {
+        private readonly Sender sender = new Sender();
         private readonly ISecurityManager securityManager;
 
         public SecurityController(ISecurityManager securityManager)
@@ -25,6 +26,7 @@ namespace ParkingLot_Problem.Controllers
         public async Task<IActionResult> Parking_Vahical(Parking parking)
         {
             object result = await this.securityManager.Parkking(parking);
+            sender.Send(result);
             if (result != null)
                 return this.Ok(parking);
 
@@ -36,6 +38,7 @@ namespace ParkingLot_Problem.Controllers
         public string Check_Parking_Open_Full()
         {
             string result= this.securityManager.Check_Parking_Open_Full();
+            sender.Send(result);
             return result;
         }
 
@@ -44,6 +47,7 @@ namespace ParkingLot_Problem.Controllers
         public string UnParking_Vahical(int ParkingSlotId)
         {
             string result = this.securityManager.UnParking(ParkingSlotId);
+            sender.Send(result);
             return result;
         }
     }

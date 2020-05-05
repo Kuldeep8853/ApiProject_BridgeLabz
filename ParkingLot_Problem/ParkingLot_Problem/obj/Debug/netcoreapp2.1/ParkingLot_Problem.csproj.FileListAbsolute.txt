@@ -22,3 +22,4 @@ B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\obj\Debug\netcore
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\obj\Debug\netcoreapp2.1\ParkingLot_Problem.dll
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\obj\Debug\netcoreapp2.1\ParkingLot_Problem.pdb
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\obj\Debug\netcoreapp2.1\ParkingLot_Problem.genruntimeconfig.cache
+B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\obj\Debug\netcoreapp2.1\ParkingLot_Problem.csproj.CoreCompileInputs.cache

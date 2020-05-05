@@ -1,11 +1,12 @@
 ﻿using Experimental.System.Messaging;
+using Model;
 using System;
 
 namespace ParkingLot_Problem
 {
     public class Sender
     {
-        public void Send(double value)
+        public void Send(object value)
         {
             try
             {

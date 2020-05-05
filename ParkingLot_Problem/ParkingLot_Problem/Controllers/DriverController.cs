@@ -14,6 +14,7 @@ namespace ParkingLot_Problem.Controllers
     [ApiController]
     public class DriverController : ControllerBase
     {
+        private readonly Sender sender = new Sender();
         private readonly IDriverManager driverManager;
 
         public DriverController(IDriverManager driverManager)
@@ -25,18 +26,20 @@ namespace ParkingLot_Problem.Controllers
         [HttpPost]
         public async Task<IActionResult> Parking_Vahical(Parking parking)
         {
-                object result = await this.driverManager.Parkking(parking);
-                if (result != null)
-                    return this.Ok(parking);
+            object result = await this.driverManager.Parkking(parking);
+            sender.Send("Vahical parked");
+            if (result != null)
+                return this.Ok(parking);
 
-                return this.BadRequest();
+            return this.BadRequest();
         }
 
         [Route("UnParkVahical")]
         [HttpDelete]
         public string UnParking_Vahical(int ParkingSlotId)
         {
-            string result=  this.driverManager.UnParking(ParkingSlotId);
+            string result = this.driverManager.UnParking(ParkingSlotId);
+            sender.Send(result);
             return result;
         }
     }

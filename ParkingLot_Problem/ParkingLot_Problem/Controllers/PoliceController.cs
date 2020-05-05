@@ -13,6 +13,7 @@ namespace ParkingLot_Problem.Controllers
     [ApiController]
     public class PoliceController : ControllerBase
     {
+        private readonly Sender sender = new Sender();
         private readonly IPoliceManager policeManager;
 
         public PoliceController(IPoliceManager policeManager)
@@ -25,6 +26,7 @@ namespace ParkingLot_Problem.Controllers
         public async Task<IActionResult> Parking_Vahical(Parking parking)
         {
             object result = await this.policeManager.Parkking(parking);
+            sender.Send(result);
             if (result != null)
                 return this.Ok(parking);
 
@@ -52,6 +54,7 @@ namespace ParkingLot_Problem.Controllers
         public string UnParking_Vahical(int ParkingSlotId)
         {
             string result = this.policeManager.UnParking(ParkingSlotId);
+            sender.Send(result);
             return result;
         }
     }

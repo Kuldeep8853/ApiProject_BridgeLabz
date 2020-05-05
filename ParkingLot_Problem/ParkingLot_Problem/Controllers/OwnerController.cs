@@ -13,6 +13,7 @@ namespace ParkingLot_Problem.Controllers
     [ApiController]
     public class OwnerController : ControllerBase
     {
+        private readonly Sender sender = new Sender();
         private readonly IOwnerManager ownerManager;
 
         public OwnerController(IOwnerManager ownerManager)
@@ -32,6 +33,7 @@ namespace ParkingLot_Problem.Controllers
         public async Task<IActionResult> Parking_Vahical(Parking parking)
         {
             object result = await this.ownerManager.Parkking(parking);
+            sender.Send(result);
                 if (result != null)
                     return this.Ok(parking);
 
@@ -43,6 +45,7 @@ namespace ParkingLot_Problem.Controllers
         public string UnParking_Vahical(int ParkingSlotId)
         {
             string result = this.ownerManager.UnParking(ParkingSlotId);
+            sender.Send(result);
             return result;
         }
     }

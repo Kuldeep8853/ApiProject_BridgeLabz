@@ -12,8 +12,12 @@ namespace ParkingLot_Problem
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
+            Receiver receiver = new Receiver();
+            receiver.Receive();
+                
             CreateWebHostBuilder(args).Build().Run();
         }
 

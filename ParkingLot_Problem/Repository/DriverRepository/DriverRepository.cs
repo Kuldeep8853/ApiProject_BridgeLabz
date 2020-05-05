@@ -1,6 +1,5 @@
 ﻿using Model;
 using Repository.UserContext;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
 
@@ -18,10 +17,19 @@ namespace Repository.DriverRepository
 
         public Task<int> Parkking(Parking parking)
         {
-            this.userContext.ParkingSpace.Add(parking);
-            var result = this.userContext.SaveChangesAsync();
-            return result;
-
+            try
+            {
+                int Number_Vahical = this.userContext.ParkingSpace.ToList().Count;
+                if (Number_Vahical == 100)
+                    throw new ParkingLotException("This ParkingLot is full, Please move the other parking lot");
+                this.userContext.ParkingSpace.Add(parking);
+                var result = this.userContext.SaveChangesAsync();
+                return result;
+            }
+            catch (ParkingLotException e)
+            {
+                throw e;
+            }
         }
 
         public string UnParking(int ParkingSlotId)

@@ -4,13 +4,10 @@ using Manager.PoliceManager;
 using Manager.SecurityManager;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Repository.DriverRepository;
 using Repository.OwnerRepository;
 using Repository.PoliceRepository;
@@ -33,7 +30,9 @@ namespace ParkingLot_Problem
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<UserContextDB>(option => option.UseSqlServer(this.Configuration.GetConnectionString("UserDbConnection")));
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
             services.AddTransient<IDriverManager, DriverManager>(); 
             services.AddTransient<IDriverRepository, DriverRepository>();
             services.AddTransient<IOwnerManager, OwnerManager>();
@@ -42,6 +41,7 @@ namespace ParkingLot_Problem
             services.AddTransient<IPoliceRepository, PoliceRepository>();
             services.AddTransient<ISecurityManager, SecurtyManager>();
             services.AddTransient<ISecurityRepository, SecurityRepository>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "ParkingLot_Problem", Version = "v1" });

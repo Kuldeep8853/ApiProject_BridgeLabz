@@ -19,10 +19,19 @@ namespace Repository.SecurityRepository
         
         public Task<int> Parkking(Parking parking)
         {
-            this.userContext.ParkingSpace.Add(parking);
-            var result = this.userContext.SaveChangesAsync();
-            return result;
-
+            try
+            {
+                int Number_Vahical = this.userContext.ParkingSpace.ToList().Count;
+                if (Number_Vahical == 100)
+                    throw new ParkingLotException("This ParkingLot is full, Please move the other parking lot");
+                this.userContext.ParkingSpace.Add(parking);
+                var result = this.userContext.SaveChangesAsync();
+                return result;
+            }
+            catch (ParkingLotException e)
+            {
+                throw e;
+            }
         }
 
         public string Check_Parking_Open_Full()
@@ -33,6 +42,7 @@ namespace Repository.SecurityRepository
 
             return "Parking Full";
         }
+
         public string UnParking(int ParkingSlotId)
         {
             try

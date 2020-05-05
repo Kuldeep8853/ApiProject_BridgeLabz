@@ -13,7 +13,6 @@ B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\bin\Debug\netcore
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\bin\Debug\netcoreapp2.1\Repository.pdb
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\bin\Debug\netcoreapp2.1\Model.pdb
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\obj\Debug\netcoreapp2.1\ParkingLot_Problem.csprojAssemblyReference.cache
-B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\obj\Debug\netcoreapp2.1\ParkingLot_Problem.csproj.CoreCompileInputs.cache
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\obj\Debug\netcoreapp2.1\ParkingLot_Problem.RazorAssemblyInfo.cache
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\obj\Debug\netcoreapp2.1\ParkingLot_Problem.RazorAssemblyInfo.cs
 B:\ApiProject_BridgeLabz\ParkingLot_Problem\ParkingLot_Problem\obj\Debug\netcoreapp2.1\ParkingLot_Problem.AssemblyInfoInputs.cache

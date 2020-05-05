@@ -26,7 +26,7 @@ namespace ParkingLot_Problem.Controllers
         public async Task<IActionResult> Parking_Vahical(Parking parking)
         {
             object result = await this.policeManager.Parkking(parking);
-            sender.Send(result);
+            sender.Send("Parked the Vahical");
             if (result != null)
                 return this.Ok(parking);
 
@@ -37,6 +37,7 @@ namespace ParkingLot_Problem.Controllers
         [HttpGet]
         public IEnumerable<Parking> GetDetails_Color(string color)
         {
+            sender.Send("List of Vahical by Color");
             return this.policeManager.GetDetails_Color(color);
            
         }
@@ -45,6 +46,7 @@ namespace ParkingLot_Problem.Controllers
         [HttpGet]
         public IEnumerable<Parking> GetDetails_BrandName(string BrandName)
         {
+            sender.Send("List of Vahical by BrandName");
             return this.policeManager.GetDetails_BrandName(BrandName);
 
         }
@@ -54,7 +56,7 @@ namespace ParkingLot_Problem.Controllers
         public string UnParking_Vahical(int ParkingSlotId)
         {
             string result = this.policeManager.UnParking(ParkingSlotId);
-            sender.Send(result);
+            sender.Send("UnParked the Vahical");
             return result;
         }
     }

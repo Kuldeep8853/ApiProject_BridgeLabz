@@ -39,7 +39,7 @@ namespace ParkingLot_Problem.Controllers
         public string UnParking_Vahical(int ParkingSlotId)
         {
             string result = this.driverManager.UnParking(ParkingSlotId);
-            sender.Send(result);
+            sender.Send("UnParked the Vahical");
             return result;
         }
     }

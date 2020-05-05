@@ -25,7 +25,9 @@ namespace ParkingLot_Problem.Controllers
         [HttpGet]
         public IEnumerable<Parking> GetAll()
         {
+            sender.Send("Get the Vahical");
             return ownerManager.GetAll();
+
         }
 
         [Route("ParkVahical")]
@@ -33,8 +35,8 @@ namespace ParkingLot_Problem.Controllers
         public async Task<IActionResult> Parking_Vahical(Parking parking)
         {
             object result = await this.ownerManager.Parkking(parking);
-            sender.Send(result);
-                if (result != null)
+            sender.Send("Parked the Vahical");
+            if (result != null)
                     return this.Ok(parking);
 
                 return this.BadRequest();
@@ -45,7 +47,7 @@ namespace ParkingLot_Problem.Controllers
         public string UnParking_Vahical(int ParkingSlotId)
         {
             string result = this.ownerManager.UnParking(ParkingSlotId);
-            sender.Send(result);
+            sender.Send("UnParked the Vahical");
             return result;
         }
     }

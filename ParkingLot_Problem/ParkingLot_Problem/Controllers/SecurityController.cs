@@ -26,7 +26,7 @@ namespace ParkingLot_Problem.Controllers
         public async Task<IActionResult> Parking_Vahical(Parking parking)
         {
             object result = await this.securityManager.Parkking(parking);
-            sender.Send(result);
+            sender.Send("Parked the Vahical");
             if (result != null)
                 return this.Ok(parking);
 
@@ -38,7 +38,7 @@ namespace ParkingLot_Problem.Controllers
         public string Check_Parking_Open_Full()
         {
             string result= this.securityManager.Check_Parking_Open_Full();
-            sender.Send(result);
+            sender.Send("Check parking Open or full");
             return result;
         }
 
@@ -47,7 +47,7 @@ namespace ParkingLot_Problem.Controllers
         public string UnParking_Vahical(int ParkingSlotId)
         {
             string result = this.securityManager.UnParking(ParkingSlotId);
-            sender.Send(result);
+            sender.Send("UnParked the Vahical");
             return result;
         }
     }
